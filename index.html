@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Webset of One</title>
-<meta name="description" content="You searched for a Strategic AE. One verified result: Matt Finneran — 2× founder (both acquired), $3M deals closed, ships production software with AI.">
+<meta name="description" content="You searched for a Strategic AE. One verified result: Matt Finneran, 2× founder (both acquired), $3M deals closed, ships production software with AI.">
 <meta property="og:title" content="The Webset of One">
 <meta property="og:description" content="You searched for a Strategic AE. One verified result.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,7 +39,8 @@
   .lede { color: var(--ink-2); font-size: 16.5px; max-width: 62ch; }
 
   /* ---------- nav ---------- */
-  nav { display: flex; justify-content: space-between; align-items: center; padding: 22px 0; }
+  nav { display: flex; justify-content: space-between; align-items: center; padding: 22px 0; flex-wrap: wrap; gap: 10px; }
+  nav .links { flex-wrap: wrap; align-items: center; }
   .brand { font: 500 18px var(--serif); color: var(--ink); }
   .brand span { color: var(--accent); }
   nav .links { display: flex; gap: 20px; font-size: 14px; }
@@ -88,7 +89,8 @@
   .tile .v { font: 500 34px/1.1 var(--serif); }
   .tile .l { font-size: 13px; color: var(--ink-2); margin-top: 6px; }
 
-  .logo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); margin-top: 26px; border: 1px solid var(--hairline); border-radius: 12px; overflow: hidden; background: var(--hairline); gap: 1px; }
+  .logo-grid { display: grid; grid-template-columns: repeat(5, 1fr); margin-top: 26px; border: 1px solid var(--hairline); border-radius: 12px; overflow: hidden; background: var(--hairline); gap: 1px; }
+  @media (max-width: 760px) { .logo-grid { grid-template-columns: repeat(2, 1fr); } }
   .logo-grid div { background: var(--panel); padding: 20px 10px; text-align: center; font: 500 15px var(--serif); color: var(--ink); }
   .logo-grid div span { display: block; font: 500 10.5px var(--mono); letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-top: 4px; }
 
@@ -150,7 +152,7 @@
   <div class="hero">
     <div class="kicker">exa.ai/websets · results</div>
     <h1>Webset results for<br><em>“qualified Strategic AEs for Exa”</em>: <span class="count">1</span></h1>
-    <p class="sub">A Webset normally returns hundreds of rows. This query returned exactly one —
+    <p class="sub">A Webset normally returns hundreds of rows. This query returned exactly one:
     fully enriched, every criterion checked against sources.</p>
   </div>
 
@@ -187,45 +189,45 @@
     <div class="kicker">Enrichment · sales record</div>
     <h2 class="display">Revenue from zero. Twice.</h2>
     <p class="lede">Two companies founded, both acquired. At Sparkcentral: sourced the early revenue and closed
-    the largest enterprise deals on the books — Delta, Netflix, a $3M T-Mobile agreement — through security
+    the largest enterprise deals on the books (Delta, Netflix, a $3M T-Mobile agreement) through security
     reviews, procurement, and multi-stakeholder executive committees. At Noteninja: personally sold the entire
-    book of business, then sold the business itself to SalesLoft. And I've sat in the buyer's chair as a CEO,
-    so I know what sellers look like from the other side.</p>
+    book of business, then sold the business itself to SalesLoft. At both companies I owned the product and
+    technical specs, and carried that into product management at SalesLoft.</p>
     <div class="tiles">
-      <div class="tile"><div class="v">2×</div><div class="l">Founder — both companies acquired (SalesLoft, Hootsuite)</div></div>
+      <div class="tile"><div class="v">2×</div><div class="l">Founder, both companies acquired (SalesLoft, Hootsuite)</div></div>
       <div class="tile"><div class="v">$43M+</div><div class="l">Raised from Founders Fund, Social Capital, Sigma West, Split Rock</div></div>
-      <div class="tile"><div class="v">$3M</div><div class="l">Largest deal — T-Mobile, C-level sponsorship</div></div>
-      <div class="tile"><div class="v">1</div><div class="l">U.S. patent — conversation intelligence (US 20200252442A1)</div></div>
+      <div class="tile"><div class="v">$3M</div><div class="l">Largest deal: T-Mobile, C-level sponsorship</div></div>
+      <div class="tile"><div class="v">1</div><div class="l">U.S. patent: conversation intelligence (US 20200252442A1)</div></div>
     </div>
     <div class="logo-grid">
-      <div>Delta Air Lines<span>closed</span></div>
-      <div>Netflix<span>closed</span></div>
-      <div>T-Mobile<span>$3M deal</span></div>
-      <div>Nordstrom<span>closed</span></div>
+      <div>Delta Air Lines<span>cold call · closed</span></div>
+      <div>Netflix<span>cold call · closed</span></div>
+      <div>T-Mobile<span>closed · $3M</span></div>
+      <div>Nordstrom<span>cold call · closed</span></div>
       <div>Hilton<span>closed</span></div>
-      <div>Emirates<span>cold-called & sold</span></div>
-      <div>Discover<span>cold-called & sold</span></div>
-      <div>Swiss Airlines<span>cold-called & sold</span></div>
-      <div>Citrix<span>cold-called & sold</span></div>
-      <div>Slack<span>cold-called & sold</span></div>
+      <div>Emirates<span>cold call · closed</span></div>
+      <div>Discover<span>cold call · closed</span></div>
+      <div>Swiss Airlines<span>closed</span></div>
+      <div>Citrix<span>cold call · closed</span></div>
+      <div>Slack<span>closed</span></div>
     </div>
     <div class="facts">
-      <div class="fact"><div class="k">Sparkcentral</div><div class="d"><b>Co-founder</b> · real-time social customer service · raised $43M+ · landed Delta, Netflix, T-Mobile, Nordstrom, Hilton · <b>acquired by Hootsuite</b></div></div>
+      <div class="fact"><div class="k">Sparkcentral</div><div class="d"><b>Co-founder</b> · real-time social customer service · raised $43M+ · landed Delta, Netflix, T-Mobile, Nordstrom, Hilton · <b>led the company through SOC 2 Type 1 and Type 2 certifications</b> · <b>acquired by Hootsuite</b></div></div>
       <div class="fact"><div class="k">Noteninja</div><div class="d"><b>Co-founder & CEO</b> · conversation intelligence for sales teams · sourced and closed all early revenue · <b>acquired by SalesLoft in under two years</b></div></div>
-      <div class="fact"><div class="k">SalesLoft</div><div class="d"><b>Product Manager, Conversation Intelligence</b> — ran product for the platform his startup became (2,000+ customers incl. Dell, MuleSoft, Alteryx) while partnering with enterprise AEs as the technical expert in competitive, executive-level evaluations</div></div>
+      <div class="fact"><div class="k">SalesLoft</div><div class="d"><b>Product Manager, Conversation Intelligence</b>. Ran product for the platform his startup became (2,000+ customers incl. Dell, MuleSoft, Alteryx) while partnering with enterprise AEs as the technical expert in competitive, executive-level evaluations</div></div>
     </div>
   </section>
 
   <section id="tech">
     <div class="kicker">Enrichment · technical proof</div>
     <h2 class="display">Ships real software. With paying customers.</h2>
-    <p class="lede">Not a professional developer — an operator who builds production systems with AI agents.
+    <p class="lede">Not a professional developer: an operator who builds production systems with AI agents.
     Which happens to be exactly the buyer Exa sells to.</p>
     <div class="product">
-      <img src="assets/whelpdesk-mascot.jpg" alt="WhelpDesk mascot — a cream puppy illustration">
+      <img src="assets/whelpdesk-mascot.jpg" alt="WhelpDesk mascot, a cream puppy illustration">
       <div>
         <h3>WhelpDesk</h3>
-        <p>The operating system for responsible dog breeders — pedigrees, litters, whelping sessions, heat-cycle
+        <p>The operating system for responsible dog breeders: pedigrees, litters, whelping sessions, heat-cycle
         and progesterone tracking, health records, and buyer communication in one place. Live on the iOS App
         Store and the web, with paying annual subscribers.</p>
         <div class="chips">
@@ -244,29 +246,29 @@
       </div>
     </div>
     <div class="dash">
-      <h4>WhelpDesk codebase — lines live in production, by language</h4>
+      <h4>WhelpDesk codebase: lines live in production, by language</h4>
       <div class="row"><div class="n">TypeScript</div><div class="track"><div class="fill" style="width:100%"></div></div><div class="v">29.5K</div></div>
       <div class="row"><div class="n">SQL</div><div class="track"><div class="fill" style="width:13%"></div></div><div class="v">3.9K</div></div>
       <div class="split"></div>
       <div class="grp"><div class="k">Mobile</div><div class="chips"><span class="chip">Expo 54</span><span class="chip">React Native 0.81</span><span class="chip">expo-router</span><span class="chip">TanStack Query</span><span class="chip">Zustand</span><span class="chip">Zod</span><span class="chip">NativeWind</span><span class="chip">expo-iap</span><span class="chip">Sentry</span><span class="chip">PostHog</span></div></div>
       <div class="grp"><div class="k">Web</div><div class="chips"><span class="chip">Next.js 16</span><span class="chip">Stripe</span><span class="chip">Supabase SSR</span><span class="chip">Recharts</span><span class="chip">PostHog</span></div></div>
       <div class="grp"><div class="k">Backend</div><div class="chips"><span class="chip">Supabase</span><span class="chip">Postgres + RLS</span><span class="chip">15 CLI migrations</span><span class="chip">per-PR branch DBs</span></div></div>
-      <div class="grp"><div class="k">Commerce</div><div class="chips"><span class="chip">Shopify — littlewolves.com</span></div></div>
+      <div class="grp"><div class="k">Commerce</div><div class="chips"><span class="chip">Shopify (littlewolves.com)</span></div></div>
     </div>
     <div class="tiles">
       <div class="tile"><div class="v">622</div><div class="l">Commits shipped in 2026 (through August)</div></div>
-      <div class="tile"><div class="v">8</div><div class="l">Active repos — apps, sites, and tools in production</div></div>
-      <div class="tile"><div class="v">2</div><div class="l">Live products with real customers — WhelpDesk & littlewolves.com</div></div>
+      <div class="tile"><div class="v">8</div><div class="l">Active repos: apps, sites, and tools in production</div></div>
+      <div class="tile"><div class="v">2</div><div class="l">Live products with real customers: WhelpDesk & littlewolves.com</div></div>
       <div class="tile"><div class="v">~3 wks</div><div class="l">First commit to App Store release for the current app</div></div>
     </div>
     <div class="facts">
       <div class="fact"><div class="k">iOS stack</div><div class="d"><b>Expo 54 · React Native 0.81 · React 19</b> · expo-iap subscriptions · Supabase (Postgres, Auth, Storage, RLS) · migrations via Supabase CLI with per-PR branch databases</div></div>
-      <div class="fact"><div class="k">Web stack</div><div class="d"><b>Next.js 16</b> (App Router) · Stripe billing · Supabase · auto-deploy on Vercel — live at whelpdesk.littlewolves.com</div></div>
-      <div class="fact"><div class="k">littlewolves.com</div><div class="d">The commerce side: a <b>Shopify storefront</b> for the breeder brand — potty trays, pads, a best-practices course — and WhelpDesk's marketing and web-signup funnel</div></div>
-      <div class="fact"><div class="k">The build</div><div class="d">The entire current app went from <b>first commit to App Store release in about three weeks</b> — built with AI agents as the engineering team</div></div>
-      <div class="fact"><div class="k">PM discipline</div><div class="d">Runs his products the way he ran product at SalesLoft: <b>specs, roadmaps, pricing & packaging, release cycles, App Store review, analytics instrumentation</b> — the full technical PM toolkit, applied solo</div></div>
-      <div class="fact"><div class="k">Full stack, solo</div><div class="d">App Store releases, Stripe billing, Postgres migrations, auth, analytics — one operator, AI agents as the team</div></div>
-      <div class="fact"><div class="k">This site</div><div class="d">Researched with <b>live Exa API searches</b>, designed, deployed, and DNS'd in an afternoon — <a href="territory.html">see the work sample</a></div></div>
+      <div class="fact"><div class="k">Web stack</div><div class="d"><b>Next.js 16</b> (App Router) · Stripe billing · Supabase · auto-deploy on Vercel, live at whelpdesk.littlewolves.com</div></div>
+      <div class="fact"><div class="k">littlewolves.com</div><div class="d">The commerce side: a <b>Shopify storefront</b> for the breeder brand (potty trays, pads, a best-practices course) and WhelpDesk's marketing and web-signup funnel</div></div>
+      <div class="fact"><div class="k">The build</div><div class="d">The entire current app went from <b>first commit to App Store release in about three weeks</b>, built with AI agents as the engineering team</div></div>
+      <div class="fact"><div class="k">PM discipline</div><div class="d">Runs his products the way he ran product at SalesLoft: <b>specs, roadmaps, pricing & packaging, release cycles, App Store review, analytics instrumentation</b>, the full technical PM toolkit, applied solo</div></div>
+      <div class="fact"><div class="k">Full stack, solo</div><div class="d">App Store releases, Stripe billing, Postgres migrations, auth, analytics: one operator, AI agents as the team</div></div>
+      <div class="fact"><div class="k">This site</div><div class="d">Researched with <b>live Exa API searches</b>, designed, deployed, and DNS'd in an afternoon. <a href="territory.html">See the work sample</a></div></div>
     </div>
   </section>
 
@@ -275,15 +277,15 @@
     <h2 class="display">Cold outreach as a way of life.</h2>
     <div class="facts">
       <div class="fact"><div class="k">Podcast</div><div class="d"><b>Top 2% new show on Spotify (2025)</b> · 17K YouTube subscribers in year one · every guest booked through cold outreach</div></div>
-      <div class="fact"><div class="k">Previously</div><div class="d">Submarine pilot & 2nd mate on Richard Branson's S/Y Necker Belle — <b>a job landed by cold-calling the yacht in person</b>: rang the doorbell and asked if they were hiring · Red Bull brand manager · PADI scuba instructor</div></div>
-      <div class="fact"><div class="k">Education</div><div class="d">UNC Chapel Hill, Kenan-Flagler Business School — Entrepreneurship</div></div>
+      <div class="fact"><div class="k">Previously</div><div class="d">Submarine pilot & 2nd mate on Richard Branson's S/Y Necker Belle, <b>a job landed by cold-calling the yacht in person</b>: rang the doorbell and asked if they were hiring · Red Bull brand manager · PADI scuba instructor</div></div>
+      <div class="fact"><div class="k">Education</div><div class="d">UNC Chapel Hill, Kenan-Flagler Business School (Entrepreneurship)</div></div>
     </div>
   </section>
 
   <div class="cta">
     <div>
       <h2>The work sample: an East Coast territory plan.</h2>
-      <p>25 strategic accounts researched with Exa's own Search API — buying committees, dated AI signals
+      <p>25 strategic accounts researched with Exa's own Search API: buying committees, dated AI signals
       with sources, and a why-Exa wedge for every account.</p>
     </div>
     <a href="territory.html">Open the territory plan →</a>
