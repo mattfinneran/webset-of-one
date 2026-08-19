@@ -1,8 +1,8 @@
 // POST /api/visit — texts Matt when someone loads thewebsetofone.com.
-// Env vars (set in Vercel project settings, same values as the corycamp project):
-//   TWILIO_ACCOUNT_SID    - AC... account SID
-//   TWILIO_API_KEY_SID    - SK... API key SID
-//   TWILIO_API_KEY_SECRET - API key secret
+// Env vars (set in Vercel project settings):
+//   TWILIO_ACCOUNT_SID    - AC... account SID (Twilio Console homepage)
+//   TWILIO_AUTH_TOKEN     - auth token (Twilio Console homepage, "show")
+//   (or instead of AUTH_TOKEN: TWILIO_API_KEY_SID + TWILIO_API_KEY_SECRET)
 //   TWILIO_FROM           - Twilio phone number, E.164
 //   MATT_CELL             - +14159902551
 
@@ -42,9 +42,10 @@ export default async function handler(req, res) {
     `\n${clip(ua, 90)}`;
 
   const sid = process.env.TWILIO_ACCOUNT_SID;
-  const auth = Buffer.from(
-    `${process.env.TWILIO_API_KEY_SID}:${process.env.TWILIO_API_KEY_SECRET}`
-  ).toString('base64');
+  const authPair = process.env.TWILIO_AUTH_TOKEN
+    ? `${sid}:${process.env.TWILIO_AUTH_TOKEN}`
+    : `${process.env.TWILIO_API_KEY_SID}:${process.env.TWILIO_API_KEY_SECRET}`;
+  const auth = Buffer.from(authPair).toString('base64');
 
   const resp = await fetch(
     `https://api.twilio.com/2010-04-01/Accounts/${sid}/Messages.json`,
