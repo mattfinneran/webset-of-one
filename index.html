@@ -106,7 +106,8 @@ posthog.init('phc_muTQQAqqXeRkoXwwpZubo5vKPLBmPdqA2NDgQtbWoc4B',{api_host:'https
   .tile .v { font: 600 30px/1.1 var(--serif); letter-spacing: -0.01em; }
   .tile .l { font-size: 13px; color: var(--ink-2); margin-top: 6px; }
 
-  .logo-grid { display: grid; grid-template-columns: repeat(5, 1fr); margin-top: 26px; border: 1px solid var(--hairline); border-radius: 12px; overflow: hidden; background: var(--hairline); gap: 1px; }
+  .grid-head { font: 600 16px/1 var(--sans); color: var(--ink); margin-top: 34px; }
+  .logo-grid { display: grid; grid-template-columns: repeat(5, 1fr); margin-top: 12px; border: 1px solid var(--hairline); border-radius: 12px; overflow: hidden; background: var(--hairline); gap: 1px; }
   @media (max-width: 760px) { .logo-grid { grid-template-columns: repeat(2, 1fr); } }
   .logo-grid div { background: var(--panel); padding: 20px 10px; text-align: center; font: 600 14px var(--sans); color: var(--ink); }
   .logo-grid div span { display: block; font: 500 10.5px var(--mono); letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-top: 4px; }
@@ -182,19 +183,18 @@ posthog.init('phc_muTQQAqqXeRkoXwwpZubo5vKPLBmPdqA2NDgQtbWoc4B',{api_host:'https
     <div class="tblwrap">
     <table class="webset">
       <thead><tr>
-        <th>Name</th><th>Location</th><th>Founder DNA</th><th>F500 closes</th><th>Ships product</th><th>Knows Exa</th>
+        <th>Name</th><th>Founder DNA</th><th>F500 closes</th><th>Ships product</th><th>Knows Exa</th>
       </tr></thead>
       <tbody>
         <tr>
           <td class="who"><img class="avatar" src="assets/matt.jpg" alt="Matt Finneran"><b>Matt Finneran</b></td>
-          <td>San Francisco<span class="cell-sub">5 years</span></td>
           <td><span class="check">✓</span>2× founder<span class="cell-sub">both acquired</span></td>
           <td><span class="check">✓</span>$3M largest<span class="cell-sub">T-Mobile, C-level</span></td>
           <td><span class="check">✓</span>Live in App Store<span class="cell-sub">paying subscribers</span></td>
           <td><span class="check">✓</span>This site<span class="cell-sub">built with Exa</span></td>
         </tr>
-        <tr class="ghost"><td><div class="bar"></div></td><td><div class="bar"></div></td><td><div class="bar"></div></td><td><div class="bar"></div></td><td><div class="bar"></div></td><td><div class="bar"></div></td></tr>
-        <tr class="ghost"><td><div class="bar"></div></td><td><div class="bar"></div></td><td><div class="bar"></div></td><td><div class="bar"></div></td><td><div class="bar"></div></td><td><div class="bar"></div></td></tr>
+        <tr class="ghost"><td><div class="bar"></div></td><td><div class="bar"></div></td><td><div class="bar"></div></td><td><div class="bar"></div></td><td><div class="bar"></div></td></tr>
+        <tr class="ghost"><td><div class="bar"></div></td><td><div class="bar"></div></td><td><div class="bar"></div></td><td><div class="bar"></div></td><td><div class="bar"></div></td></tr>
       </tbody>
     </table>
     </div>
@@ -216,6 +216,7 @@ posthog.init('phc_muTQQAqqXeRkoXwwpZubo5vKPLBmPdqA2NDgQtbWoc4B',{api_host:'https
       <div class="tile"><div class="v">$3M</div><div class="l">Largest deal: T-Mobile, C-level sponsorship</div></div>
       <div class="tile"><div class="v">1</div><div class="l">U.S. patent: conversation intelligence (US 20200252442A1)</div></div>
     </div>
+    <h3 class="grid-head">Highlighted deals</h3>
     <div class="logo-grid">
       <div>Delta Air Lines<span>cold call · closed</span></div>
       <div>Netflix<span>cold call · closed</span></div>
