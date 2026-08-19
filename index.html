@@ -51,6 +51,9 @@ posthog.init('phc_muTQQAqqXeRkoXwwpZubo5vKPLBmPdqA2NDgQtbWoc4B',{api_host:'https
   .kicker { font: 600 11px/1 var(--mono); letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
   h2.display { font: 600 clamp(24px, 3.4vw, 34px)/1.2 var(--serif); letter-spacing: -0.02em; margin: 10px 0 8px; }
   .lede { color: var(--ink-2); font-size: 16.5px; max-width: 62ch; }
+  .lede-list { margin: 12px 0 0; padding-left: 24px; color: var(--ink-2); font-size: 16px; max-width: 66ch; display: grid; gap: 10px; }
+  .lede-list li b { color: var(--ink); font-weight: 600; }
+  .lede-close { margin-top: 12px; }
 
   /* ---------- nav ---------- */
   nav { display: flex; justify-content: space-between; align-items: center; padding: 22px 0; flex-wrap: wrap; gap: 10px; }
@@ -204,12 +207,16 @@ posthog.init('phc_muTQQAqqXeRkoXwwpZubo5vKPLBmPdqA2NDgQtbWoc4B',{api_host:'https
   <section id="sales">
     <div class="kicker">Sales record</div>
     <h2 class="display">Enterprise revenue from zero. Twice.</h2>
-    <p class="lede">Two companies founded, both acquired. At Sparkcentral: sourced the first $1MM in revenue,
-    then hired and managed the sales team while continuing to close the largest deals on the books (Delta,
-    Netflix, a $3M T-Mobile agreement) through security reviews, procurement, and multi-stakeholder executive
-    committees. At Noteninja: personally sold the entire book of business, then sold the business itself to
-    SalesLoft. At both companies I owned the product and technical specs, and carried that into product
-    management at SalesLoft.</p>
+    <p class="lede">Two companies founded, leading enterprise sales. Both acquired.</p>
+    <ol class="lede-list">
+      <li><b>Sparkcentral:</b> sourced the first $1MM in revenue, then hired and managed the sales team
+      while continuing to close the largest deals on the books (Delta, Netflix, a $3M T-Mobile agreement)
+      through security reviews, procurement, and multi-stakeholder executive committees.</li>
+      <li><b>Noteninja:</b> personally sold the entire book of business, then sold the business itself
+      to SalesLoft.</li>
+    </ol>
+    <p class="lede lede-close">At both companies I owned the product and technical specs, and carried that
+    into product management at SalesLoft.</p>
     <div class="tiles">
       <div class="tile"><div class="v">2×</div><div class="l">Founder, both companies acquired (SalesLoft, Hootsuite)</div></div>
       <div class="tile"><div class="v">$43M+</div><div class="l">Raised from Founders Fund, Social Capital, Sigma West, Split Rock</div></div>
