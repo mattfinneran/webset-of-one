@@ -21,9 +21,10 @@ export default async function handler(req, res) {
   }
 
   const ip = (req.headers['x-forwarded-for'] || '').split(',')[0].trim() || 'unknown';
-  const last = recent.get(ip) || 0;
+  const key = ip + '|' + ua.slice(0, 80); // per device/browser, not per network
+  const last = recent.get(key) || 0;
   if (Date.now() - last < COOLDOWN_MS) return res.status(204).end();
-  recent.set(ip, Date.now());
+  recent.set(key, Date.now());
 
   const body = typeof req.body === 'object' && req.body ? req.body : {};
   const path = clip(body.path, 60) || '/';
