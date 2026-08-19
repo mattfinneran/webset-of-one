@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>East Coast Territory Plan · Built with Exa</title>
-<meta name="description" content="A 25-account east coast territory plan researched entirely with Exa's Search API. Prepared by Matt Finneran.">
+<title>Prospective Territory Plan · Built with Exa</title>
+<meta name="description" content="A 25-account prospective territory plan researched entirely with Exa's Search API. Prepared by Matt Finneran.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
 <script>
 !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
 posthog.init('phc_muTQQAqqXeRkoXwwpZubo5vKPLBmPdqA2NDgQtbWoc4B',{api_host:'https://us.i.posthog.com'});
@@ -24,20 +24,20 @@ posthog.init('phc_muTQQAqqXeRkoXwwpZubo5vKPLBmPdqA2NDgQtbWoc4B',{api_host:'https
 <style>
   :root {
     color-scheme: light;
-    --page: #fcfcfa;
-    --surface: #ffffff;
-    --surface-2: #f2f1ec;
-    --ink: #131313;
-    --ink-2: #55554f;
-    --muted: #8a8a82;
-    --hairline: #e6e5df;
-    --grid: #eeede8;
+    --page: #f3f1ea;
+    --surface: #fbfaf6;
+    --surface-2: #edeae0;
+    --ink: #1d1c17;
+    --ink-2: #514f46;
+    --muted: #87857a;
+    --hairline: #dfdcd1;
+    --grid: #e9e6db;
     --accent: #2f6bdb;
     --accent-deep: #2f6bdb;
     --accent-wash: #f2f6fe;
     --good: #1b7f3b;
-    --font: system-ui, -apple-system, "Segoe UI", sans-serif;
-    --serif: "Newsreader", Georgia, "Times New Roman", serif;
+    --font: "Inter", system-ui, -apple-system, sans-serif;
+    --serif: "Inter", system-ui, -apple-system, sans-serif;
     --mono: ui-monospace, "SF Mono", Menlo, monospace;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -56,9 +56,9 @@ posthog.init('phc_muTQQAqqXeRkoXwwpZubo5vKPLBmPdqA2NDgQtbWoc4B',{api_host:'https
     font: 600 11px/1 var(--mono); letter-spacing: 0.14em; text-transform: uppercase;
     color: var(--muted); margin-bottom: 14px;
   }
-  h1 { font: 500 clamp(32px, 5vw, 50px)/1.1 var(--serif); letter-spacing: -0.015em; }
+  h1 { font: 700 clamp(28px, 4.4vw, 42px)/1.15 var(--serif); letter-spacing: -0.02em; }
   .topnav { display: flex; justify-content: space-between; align-items: center; padding: 22px 0 0; }
-  .topnav .brand { font: 500 18px var(--serif); color: var(--ink); text-decoration: none; }
+  .topnav .brand { font: 600 17px var(--serif); color: var(--ink); text-decoration: none; }
   .topnav .brand span { color: var(--accent); }
   .topnav a.back { font-size: 14px; color: var(--ink-2); text-decoration: none; }
   .topnav a.back:hover { color: var(--accent); }
@@ -76,16 +76,9 @@ posthog.init('phc_muTQQAqqXeRkoXwwpZubo5vKPLBmPdqA2NDgQtbWoc4B',{api_host:'https
     border-radius: 10px; padding: 18px 20px;
   }
   .tile .label { font-size: 13px; color: var(--muted); }
-  .tile .value { font: 500 34px/1.15 var(--serif); margin-top: 4px; }
+  .tile .value { font: 600 30px/1.15 var(--serif); margin-top: 4px; letter-spacing: -0.01em; }
   .tile .note { font-size: 12.5px; color: var(--ink-2); margin-top: 2px; }
 
-  /* ---------- story strip ---------- */
-  .story {
-    background: var(--accent-wash); border: 1px solid #c9d8f7;
-    border-radius: 10px; padding: 18px 22px; margin-bottom: 36px;
-    font-size: 15px; color: var(--ink-2);
-  }
-  .story strong { color: var(--ink); }
 
   /* ---------- segment bar (single-hue, one series) ---------- */
   .segbar { padding: 4px 0 36px; }
@@ -109,10 +102,10 @@ posthog.init('phc_muTQQAqqXeRkoXwwpZubo5vKPLBmPdqA2NDgQtbWoc4B',{api_host:'https
 
   /* ---------- contact webset ---------- */
   .contacts-sec { padding: 8px 0 56px; }
-  .contacts-sec h2 { font: 500 clamp(24px, 3.4vw, 34px)/1.15 var(--serif); margin: 10px 0 8px; }
+  .contacts-sec h2 { font: 600 clamp(21px, 2.8vw, 28px)/1.25 var(--serif); margin: 10px 0 8px; }
   .contacts-sec .lede { color: var(--ink-2); font-size: 15.5px; max-width: 68ch; margin-bottom: 20px; }
   .cpanel { background: var(--surface); border: 1px solid var(--hairline); border-radius: 14px; overflow: hidden; box-shadow: 0 18px 40px -30px rgba(19,19,19,0.25); }
-  .cpanel .cstatus { display: flex; gap: 8px; align-items: center; padding: 10px 18px; font: 500 12px var(--mono); letter-spacing: 0.04em; color: var(--good); background: #f4faf5; border-bottom: 1px solid var(--hairline); }
+  .cpanel .cstatus { display: flex; gap: 8px; align-items: center; padding: 10px 18px; font: 500 13px var(--font); color: var(--ink-2); background: var(--surface); border-bottom: 1px solid var(--hairline); }
   .cpanel .cstatus .n { color: var(--muted); }
   .ctblwrap { overflow-x: auto; max-height: 560px; overflow-y: auto; }
   table.cweb { width: 100%; border-collapse: collapse; min-width: 720px; }
@@ -171,9 +164,8 @@ posthog.init('phc_muTQQAqqXeRkoXwwpZubo5vKPLBmPdqA2NDgQtbWoc4B',{api_host:'https
 </div>
 <header>
   <div class="wrap">
-    <div class="kicker">The work sample · built with Exa</div>
-    <h1>East Coast Territory Plan</h1>
-    <p class="sub">Twenty-five strategic accounts from Boston to Atlanta: buying committees mapped, AI-initiative
+    <h1>Prospective Territory Plan</h1>
+    <p class="sub">Twenty-five strategic accounts: buying committees mapped, AI-initiative
     signals surfaced, and a why-Exa wedge for each. Every fact on this page was retrieved with Exa's own
     Search API.</p>
     <p class="byline">Prepared by <strong>Matt Finneran</strong> · August 2026 · not an official Exa property</p>
@@ -183,11 +175,6 @@ posthog.init('phc_muTQQAqqXeRkoXwwpZubo5vKPLBmPdqA2NDgQtbWoc4B',{api_host:'https
 <main class="wrap">
   <section class="stats" id="stats" aria-label="Territory summary"></section>
 
-  <div class="story">
-    <strong>The point of this page:</strong> it is its own product demo. The signals, people, and sources below
-    weren't pulled from a data vendor. They came from live Exa searches run while building this plan.
-    If Exa can build an AE's territory plan, it can power your customers' agents.
-  </div>
 
   <section class="segbar" aria-label="Accounts by segment">
     <h2>Accounts by segment</h2>
@@ -199,17 +186,12 @@ posthog.init('phc_muTQQAqqXeRkoXwwpZubo5vKPLBmPdqA2NDgQtbWoc4B',{api_host:'https
   <section class="grid" id="grid" aria-label="Account cards"></section>
 
   <section class="contacts-sec" aria-label="Contact webset">
-    <div class="kicker">The contact webset</div>
     <h2>The people to call.</h2>
-    <p class="lede">Every buying-committee member across the territory, flattened into one working list,
-    the way a Webset would return it. Names and titles are public record, verified through the same Exa
-    searches that built the account cards.</p>
+    <p class="lede">Every buying-committee member across the territory in one working list.</p>
     <div class="cpanel">
-      <div class="cstatus">✓ ENRICHMENT COMPLETE <span class="n" id="ccount"></span></div>
+      <div class="cstatus"><span id="ccount"></span></div>
       <div class="ctblwrap"><table class="cweb" id="ctable"></table></div>
-      <div class="cnote">Direct contact details (email, phone) are enriched privately per outreach sequence and kept
-      off the public page. Compliant selling starts with how you handle data. LinkedIn links open a people search
-      for the name + company.</div>
+      <div class="cnote">Names and titles are public record. Direct contact details are gathered privately per outreach sequence.</div>
     </div>
   </section>
 </main>
@@ -218,7 +200,7 @@ posthog.init('phc_muTQQAqqXeRkoXwwpZubo5vKPLBmPdqA2NDgQtbWoc4B',{api_host:'https
   <div class="wrap">
     <h2>Methodology</h2>
     <p>Research was run through Exa's MCP server (<code>web_search_advanced_exa</code>), the same neural
-    search API Exa sells, orchestrated by Claude agents across 56 live queries. Each account got targeted
+    search API Exa sells, orchestrated by Claude agents across 100+ live queries. Each account got targeted
     queries for AI initiatives, platform builds, hiring signals, and named AI leadership; only publicly
     verifiable facts with sources made the cut. Tiering reflects signal strength and wedge clarity, not
     company size. The contact webset lists names and titles from public record; direct contact details are
@@ -229,7 +211,7 @@ posthog.init('phc_muTQQAqqXeRkoXwwpZubo5vKPLBmPdqA2NDgQtbWoc4B',{api_host:'https
 
 <script>
 /* DATA: every signal below was retrieved via Exa's web_search_advanced_exa (Aug 19, 2026) */
-const EXA_QUERIES = 56;
+const EXA_QUERIES = "100+";
 const ACCOUNTS = [
 {name:"JPMorgan Chase",segment:"Banking",hq:"New York, NY",tier:1,
  snapshot:"~319K employees · largest US bank · $19.8B tech budget",
@@ -251,36 +233,6 @@ const ACCOUNTS = [
  committee:[{name:"Daniel Marcu",title:"Global Head of AI Engineering and Science",role:"Economic buyer"},{name:"Rahul Sharma",title:"Head of GS AI Platform Engineering",role:"Technical evaluator"},{name:"Belinda Neal",title:"COO of Core Engineering · Head of Product Mgmt & Engineering Partnerships",role:"Champion"},{name:"Marco Argenti",title:"CIO",role:"Exec sponsor"}],
  dq:"Your onboarding agents vet clients against the open web. How are you sourcing and verifying that external data today, and what does a false positive cost?"},
 
-{name:"Morgan Stanley",segment:"Banking",hq:"New York, NY",tier:2,
- snapshot:"~80K employees · investment banking, wealth mgmt, institutional securities",
- why:"AskResearchGPT is internal-only RAG. Advisors still lack live web context (news, filings, life events). Exa adds real-time grounding; Websets powers advisor prospecting lists.",
- signals:[
-  {text:"~98% of employees have access to at least one AI program; hundreds of GenAI use cases (Jun 2026)",url:"https://www.americanbanker.com/news/morgan-stanleys-michael-pizzi-is-27-on-the-most-innovative-people-in-finance-ranking"},
-  {text:"First major bank opening wealth platforms to external corporate AI agents (Jun 2026)",url:"https://www.cnbc.com/2026/06/03/ai-agents-morgan-stanley-wealth-management-funnel.html"},
-  {text:"AskResearchGPT: RAG over 100K+ internal research docs for advisors (Jun 2026)",url:"https://forsmile.jp/en/articles/morgan-stanley-ai-gpt4-knowledge-search-efficiency-20260619"}],
- committee:[{name:"Jeff McMillan",title:"Head of Firmwide AI"},{name:"Michael Pizzi",title:"EVP, Global Head of Technology & Operations"},{name:"Katy Huberty",title:"Global Head of Research"}],
- dq:"AskResearchGPT answers from internal research. What happens when an advisor's question depends on something that happened this morning?"},
-
-{name:"Capital One",segment:"Banking",hq:"McLean, VA",tier:2,
- snapshot:"~52K employees · top-10 US bank, proprietary-AI and cloud-native strategy",
- why:"They build agents in-house on proprietary data. The gap is real-time, compliant web grounding (inventory, market and rate context). Exa slots into the existing multi-agent workflow without replacing it.",
- signals:[
-  {text:"Chat Concierge: first proprietary multi-agentic AI for auto dealers/buyers: plans, validates, executes (Mar 2025)",url:"https://www.capitalone.com/tech/ai/future-of-ai-car-dealerships-shopping/"},
-  {text:"Only financial institution among top US patent holders in agentic/generative AI; 5,000+ patents (Jun 2025)",url:"https://www.capitalone.com/tech/ai/innovating-financial-services-through-customer-centered-ai/"},
-  {text:"IEEE Spectrum profile of its enterprise-AI org under Prem Natarajan (Jun 2026)",url:"https://spectrum.ieee.org/capital-one-science-ai-finance-innovation"}],
- committee:[{name:"Prem Natarajan",title:"EVP, Chief Scientist & Head of Enterprise AI"},{name:"Rob Alexander",title:"CIO"},{name:"Sanjiv Yajnik",title:"President, Financial Services"}],
- dq:"When Chat Concierge's agents need current information outside your data ecosystem, how do they retrieve it today, and who owns that retrieval layer?"},
-
-{name:"BlackRock",segment:"Asset Management",hq:"New York, NY",tier:2,
- snapshot:"~21K employees · world's largest asset manager · Aladdin platform",
- why:"Aladdin Copilot and Auto Commentary synthesize portfolio analytics but lack live market and news context. Exa provides real-time web grounding inside Aladdin's AI layer, sellable across every Aladdin client.",
- signals:[
-  {text:"Aladdin Wealth Auto Commentary GenAI tool launched; Morgan Stanley first client (Oct 2025)",url:"https://www.businesswire.com/news/home/20251002577295/en/"},
-  {text:"Aladdin Copilot (natural-language risk/scenario queries, Microsoft partnership) launched late 2025 (Jun 2026)",url:"https://usabusinesstimes.com/blackrocks-aladdin-platform-still-the-nervous-system-of-wall-street/"},
-  {text:"Nish Ajitsaria named firmwide Executive Sponsor for AI",url:"https://www.blackrock.com/corporate/about-us/leadership/nish-ajitsaria"}],
- committee:[{name:"Rob Goldstein",title:"COO"},{name:"Sudhir Nair",title:"Global Head of Aladdin"},{name:"Nish Ajitsaria",title:"Co-Head, Aladdin Product Engineering · AI Executive Sponsor"}],
- dq:"Auto Commentary blends Aladdin analytics with your CIO outlook. Where does live market news enter that pipeline, and who validates its sources?"},
-
 {name:"Citadel",segment:"Asset Management",hq:"Miami, FL · NYC",tier:1,
  snapshot:"~3K employees · multi-strategy hedge fund, ~$65B+ AUM",
  why:"Their AI Assistant runs on licensed and internal content only. Exa adds fast, semantically precise open-web retrieval (niche sources, primary documents) for the agentic research loops Griffin is publicly touting.",
@@ -300,16 +252,6 @@ const ACCOUNTS = [
   {text:"Thesis piece on LLM-derived features as new alpha signals (Jul 2026)",url:"https://www.twosigma.com/articles/anything-can-be-language-now-my-thoughts-on-the-future-of-features-research/"}],
  committee:[{name:"Mike Schuster",title:"MD, Head of AI Core Team",role:"Economic buyer"},{name:"Matt Greenwood",title:"Chief AI Innovation Officer",role:"Exec sponsor"},{name:"Carter Page",title:"MD, Head of Data Engineering",role:"Champion"},{name:"Zia Williams",title:"MD, AI/ML Engineering",role:"Technical evaluator"}],
  dq:"Your 2026 outlook puts LLM-generated text features at the center of alpha research. What's your pipeline for clean, timestamped web text at scale, and where does it break?"},
-
-{name:"Fidelity Investments",segment:"Asset Management",hq:"Boston, MA",tier:2,
- snapshot:"~75K employees · asset mgmt, brokerage, retirement, wealth services",
- why:"Building enterprise AI platforms internally at massive scale. Exa provides compliant, citation-backed real-time web grounding for copilots and advisor research tools; Websets for structured prospect intelligence.",
- signals:[
-  {text:"Simultaneous job cuts + hiring spree in a tech/product reorg tied to its AI push (May 2026)",url:"https://www.bostonglobe.com/2026/05/07/business/fidelity-hiring-spree-job-cuts-return-to-office/"},
-  {text:"Saifr (Fidelity Labs venture) AI agents integrating into Superhuman/Grammarly for compliant comms (Jan 2026)",url:"https://www.businesswire.com/news/home/20260113862730/en/"},
-  {text:"Wealthscape advisor platform relaunched with AI embedded (Sep 2025)",url:"https://riabiz.com/a/2025/9/17/fidelity-touts-renewed-wealthscape-but-departs-from-the-ai-hype-with-low-key-launch-its-part-of-the-larger-story-not-necessarily-the-story-company-says"}],
- committee:[{name:"Man Chon (MC) U",title:"SVP & CIO, Global Head of Enterprise Data & AI"},{name:"Himanshu Kalkar",title:"SVP, Head of Products, AI & Tech"},{name:"Sachin Solkhan",title:"VP, AI Product Engineering"}],
- dq:"As you rebuild the tech org around AI platforms, what's your standard for letting an internal copilot cite live web content, and which team owns that retrieval layer?"},
 
 {name:"Bloomberg",segment:"Data & Ratings",hq:"New York, NY",tier:1,
  snapshot:"~21K+ employees · financial data, analytics, news, the Terminal",
@@ -350,16 +292,6 @@ const ACCOUNTS = [
   {text:"Next-gen CoCounsel rebuilt from scratch on Anthropic models; GA Aug 2026 (Jun 2026)",url:"https://www.lawnext.com/2026/06/thomson-reuters-opens-early-access-to-the-next-generation-of-cocounsel-legal"}],
  committee:[{name:"Maria Apazoglou",title:"Head of AI, BI & Data Platforms",role:"Economic buyer"},{name:"Rawia Ashraf",title:"Head of Product, CoCounsel Transactional",role:"Champion"},{name:"Omar Bari",title:"VP, Applied Research, TR Labs",role:"Technical evaluator"},{name:"Joel Hron",title:"CTO (ex-Global Head of AI, TR Labs)",role:"Exec sponsor"}],
  dq:"Now that CoCounsel plans and executes workflows autonomously, what happens when a step needs information outside Westlaw: how does the agent reach the open web?"},
-
-{name:"Liberty Mutual",segment:"Insurance",hq:"Boston, MA",tier:2,
- snapshot:"~40K employees · global P&C insurer, ~$50B revenue",
- why:"LibertyGPT is grounded in internal data only. Underwriting and claims copilots need live external context (businesses, properties, risk events). Exa is a natural buy on their explicit 30-capability list.",
- signals:[
-  {text:"LibertyGPT internal GenAI platform reaches 74% of employees; multi-model hub (Jan 2026)",url:"https://www.forbes.com/sites/randybean/2026/01/19/how-liberty-mutual-insurance-is-using-data-and-ai-to-deliver-value-to-its-customers-and-employees/"},
-  {text:"50 GenAI use cases in production/scaling; 30+ AI capabilities on a build-or-buy list (Feb 2026)",url:"https://www.cio.com/article/4135220/using-ai-to-unlock-human-potential-at-liberty-mutual.html"},
-  {text:"Building AI agents for IT service; continuous startup-vendor test pipeline (Oct 2025)",url:"https://fastforward.boldstart.vc/how-liberty-mutuals-cio-is-leading-the-shift-from-ai-experimentation-to-execution/"}],
- committee:[{name:"Monica Caldas",title:"EVP & Global CIO"},{name:"Tony Marron",title:"Managing Director, Liberty IT"},{name:"Emily Lyons",title:"Chief Enterprise Data & Data Science Officer"}],
- dq:"Of your 50 production use cases, which ones stall because the model needs current external-world data (a business, a property, a risk event) rather than internal documents?"},
 
 {name:"Chubb",segment:"Insurance",hq:"New York, NY (exec offices)",tier:1,
  snapshot:"~43K employees · world's largest publicly traded P&C insurer",
@@ -441,7 +373,7 @@ const ACCOUNTS = [
  committee:[{name:"Arun Mehta",title:"SVP, Product Management (Maestro / Agentic Orchestration)",role:"Economic buyer"},{name:"Mark Geene",title:"SVP & GM, AI Products",role:"Champion"},{name:"Mircea Neagovici-Negoescu",title:"SVP, AI and Research",role:"Technical evaluator"},{name:"Graham Sheldon",title:"Chief Product Officer",role:"Exec sponsor"}],
  dq:"When your customers' agents in Maestro need external context (a vendor's status, a regulation, a counterparty), what's the retrieval layer today, and how often does it break a long-running workflow?"},
 
-{name:"Hebbia",segment:"Tech & SaaS",hq:"New York, NY",tier:1,
+{name:"Hebbia",segment:"AI Native",hq:"New York, NY",tier:1,
  snapshot:"~100–150 employees · $161M raised · Matrix AI platform used by 40%+ of the largest asset managers",
  why:"Matrix and Max excel over internal documents and licensed data, but diligence, origination, and screening demand live public-web coverage. Exa is the API-native, citation-friendly web layer Hebbia can embed instead of build; Websets maps directly to origination/screening.",
  signals:[
@@ -480,14 +412,63 @@ const ACCOUNTS = [
   {text:"Closing Power suite at Saleslove London: Sales Strategist Agent, Influence Graph (Nov 2025)",url:"https://www.prnewswire.com/news-releases/salesloft-unveils-ai-closing-power-suite-at-saleslove-on-tour-london-event-302613318.html"},
   {text:"Clari + Salesloft appoints CTO and CRO to scale the merged AI platform (May 2026)",url:"https://www.businesswire.com/news/home/20260513426805/en/"}],
  committee:[{name:"Kylie Fuentes",title:"Chief Product Officer (Predictive Revenue System)",role:"Economic buyer"},{name:"Ryan Topping",title:"VP, AI Engineering",role:"Technical evaluator"},{name:"Rajesh Krishnaswami",title:"CTO",role:"Champion"},{name:"Brian Benfer",title:"Chief Revenue Officer",role:"Exec sponsor"}],
- dq:"Your Account and Person Research Agents promise up-to-date buyer insight. What web-search backend feeds them today, and how do you handle freshness when 21 agents fan out per account?"}
+ dq:"Your Account and Person Research Agents promise up-to-date buyer insight. What web-search backend feeds them today, and how do you handle freshness when 21 agents fan out per account?"},
+
+{name:"FactSet",segment:"Data & Ratings",hq:"Norwalk, CT",tier:2,
+ snapshot:"$2.3B revenue · financial data platform repositioning around AI",
+ why:"FactSet is racing Bloomberg and S&P to agentic products, and its web grounding is currently outsourced to Google, a competitor-adjacent dependency. Exa offers neutral, citation-grade, auditable web retrieval that fits its MCP suite and regulated-environment positioning.",
+ signals:[
+  {text:"Strategic partnership with Google Cloud: Gemini embedded in Workstation, including Google grounding for web content (Jun 2026)",url:"https://www.prnewswire.com/news-releases/factset-announces-strategic-partnership-with-google-cloud-to-bring-advanced-ai-to-financial-intelligence-302814100.html"},
+  {text:"Portfolio Analytics MCP limited release: governed analytics exposed to agentic interfaces (Jun 2026)",url:"https://apnews.com/press-release/globenewswire-mobile/press-release-e2603a82f014094dcab2b19b6f31e13e"},
+  {text:"AI Document Search beta rolled out to 85K+ users (Mar 2026)",url:"https://www.globenewswire.com/de/news-release/2026/03/26/3262928/7768/en/FactSet-Deploys-AI-Beta-to-More-Than-85K-Users-Announces-AI-Enabled-Document-Search-Functionality-to-Transform-Financial-Productivity.html"}],
+ committee:[{name:"Kate Stepp",title:"Chief AI Officer",role:"Economic buyer"},{name:"Kristina Karnovsky",title:"EVP, Dealmakers & Wealth",role:"Champion"},{name:"David Mellars",title:"Head of Portfolio Analytics",role:"Technical evaluator"},{name:"Sanoke Viswanathan",title:"CEO",role:"Exec sponsor"}],
+ dq:"Your Google Cloud deal gives you Gemini grounding for web content. When an agent's answer gets audited, can you show clients exactly which web sources it retrieved?"},
+
+{name:"Clay",segment:"AI Native",hq:"New York, NY",tier:1,
+ snapshot:"~800+ employees · $3.1B valuation · $100M+ ARR GTM platform",
+ why:"Claygent runs agentic web research at billion-task volume, exactly Exa's workload, and Exa is already a listed Clay data provider. The wedge is expansion: from optional marketplace integration to Claygent's default retrieval layer at platform scale.",
+ signals:[
+  {text:"$100M Series C led by CapitalG at a $3.1B valuation (Aug 2025)",url:"https://www.reuters.com/technology/clay-valued-31-billion-latest-fundraise-ai-continues-run-hot-2025-08-05/"},
+  {text:"1B+ tasks completed by Claygent AI research agents; 10,000+ customers (Aug 2025)",url:"https://www.businesswire.com/news/home/20250805719448/en/AI-GTM-Leader-Clay-Raises-%24100M-Series-C-to-Fuel-GTM-Engineering-Roles-Industrywide"},
+  {text:"Exa is already listed as a Clay data-provider integration",url:"https://www.clay.com/integrations/data-provider/exa"}],
+ committee:[{name:"Varun Anand",title:"Co-founder & Head of Operations",role:"Economic buyer"},{name:"Willie Yao",title:"Head of Engineering",role:"Technical evaluator"},{name:"Kareem Amin",title:"Co-founder & CEO",role:"Exec sponsor"}],
+ dq:"Exa is already in your data marketplace. What share of Claygent runs route through it today versus other search providers, and what would it take to make it the default?"},
+
+{name:"Rogo",segment:"AI Native",hq:"New York, NY",tier:1,
+ snapshot:"~150 employees · $2B valuation · AI analyst for investment banking",
+ why:"Felix's autonomous workflows (deal screening, buyer outreach, data room diligence) need citation-grade live web retrieval beyond licensed feeds, and Rogo's audit-trail positioning demands sourced answers, not scraped results.",
+ signals:[
+  {text:"$160M Series D led by Kleiner Perkins at $2B; 35,000 professionals across 250+ institutions incl. Rothschild, Jefferies, Lazard (Apr 2026)",url:"https://www.prnewswire.com/news-releases/rogo-raises-160m-series-d-to-scale-the-agentic-platform-for-finance-302756546.html"},
+  {text:"Launched Felix, agentic AI for deal screening, CIM generation, buyer outreach, data room diligence; acquired Offset for agentic modeling (2026)",url:"https://siliconangle.com/2026/04/29/rogo-raises-160m-speed-financial-analysis-ai-agents/"},
+  {text:"Hired Joseph Kim (ex Google Gemini) as Head of Applied AI",url:"https://rogo.ai/news/welcoming-our-new-head-of-applied-ai-joseph-kim"}],
+ committee:[{name:"John Willett",title:"Co-founder & COO",role:"Economic buyer"},{name:"Joseph Kim",title:"Head of Applied AI (ex Google Gemini)",role:"Champion"},{name:"Tumas Rackaitis",title:"Co-founder (former CTO)",role:"Technical evaluator"},{name:"Gabriel Stengel",title:"Co-founder & CEO",role:"Exec sponsor"}],
+ dq:"When Felix screens buyers or runs diligence, how does it retrieve and cite live web information outside your licensed data integrations today?"},
+
+{name:"Brightwave",segment:"AI Native",hq:"New York, NY",tier:2,
+ snapshot:"~12 people · $21M raised · analyst-grade AI research agents",
+ why:"Its agent fleets explore filings, news, and the public web with sentence-level source attribution as the core product promise. A 12-person team should buy citation-grade retrieval infrastructure, not build and maintain crawling.",
+ signals:[
+  {text:"Launched Research Agents, a multi-agent autonomous research platform; 4x revenue growth since seed (Aug 2025)",url:"https://www.businesswire.com/news/home/20250812210320/en/Brightwave-Launches-Research-Agents-The-First-Analyst-Grade-AI-Chat-That-Builds-Thinks-and-Works-in-Every-Dataroom"},
+  {text:"Deep research platform for deal rooms with sentence-level source attribution (Apr 2025)",url:"https://www.businesswire.com/news/home/20250409046301/en/Brightwave-Unveils-First-Deep-Research-Platform-for-Deal-Rooms"}],
+ committee:[{name:"Mike Conover",title:"Co-founder & CEO (ex Databricks LLM lead)",role:"Economic buyer"},{name:"Brandon Kotara",title:"Co-founder & CTO",role:"Technical evaluator"},{name:"Maximilian Gartner",title:"Head of Go-to-Market",role:"Champion"}],
+ dq:"Your agents promise sentence-level attribution across filings and the live web. What powers the open-web leg of that retrieval today, and how much engineering time does it consume?"},
+
+{name:"Norm Ai",segment:"AI Native",hq:"New York, NY",tier:2,
+ snapshot:"~150+ employees · $1.2B valuation · regulatory AI agents",
+ why:"Norm encodes regulations as LLM-native programs, but regulations, guidance, and enforcement actions change on live government websites. Agents making compliance determinations need fresh, source-linked retrieval of that material, not stale snapshots.",
+ signals:[
+  {text:"$120M Series C led by Khosla Ventures at $1.2B; clients represent $30T+ AUM (Jul 2026)",url:"https://techcrunch.com/2026/07/07/ai-law-startup-norm-raises-120m-hits-unicorn-valuation/"},
+  {text:"Launched a compliance agent for Microsoft 365 Copilot; affiliated AI-native firm Norm Law (Jul 2026)",url:"https://www.prnewswire.com/news-releases/norm-ai-raises-120-million-at-a-1-2-billion-valuation-led-by-khosla-ventures-to-deliver-the-full-stack-model-for-legal-ai-302819152.html"},
+  {text:"$48M round led by Coatue with Blackstone, Vanguard, TIAA participation (Mar 2025)",url:"https://news.bloomberglaw.com/legal-ops-and-tech/blackstone-vanguard-invest-funds-in-compliance-ai-startup"}],
+ committee:[{name:"Scott Worland",title:"Chief Technology Officer",role:"Economic buyer"},{name:"Matt Neary",title:"Technical Director, Applied AI Research Engineering",role:"Technical evaluator"},{name:"John Nay",title:"Founder & CEO",role:"Exec sponsor"}],
+ dq:"When the SEC or FINRA publishes new guidance, how do your regulatory agents discover and ingest it from the live web, and how do you prove source freshness to a compliance officer?"}
 ];
 
 const STATS = [
-  {label:"Target accounts", value: ACCOUNTS.length, note:"Boston → Atlanta"},
-  {label:"Live Exa searches", value: EXA_QUERIES, note:"run to build this page"},
-  {label:"Dated AI signals", value: ACCOUNTS.reduce((n,a)=>n+a.signals.length,0), note:"every one with a source"},
-  {label:"Buying-committee contacts", value: ACCOUNTS.reduce((n,a)=>n+a.committee.length,0), note:"publicly verifiable"}
+  {label:"Target accounts", value: ACCOUNTS.length},
+  {label:"Live Exa searches", value: EXA_QUERIES},
+  {label:"Dated AI signals", value: ACCOUNTS.reduce((n,a)=>n+a.signals.length,0)},
+  {label:"Buying-committee contacts", value: ACCOUNTS.reduce((n,a)=>n+a.committee.length,0)}
 ];
 
 /* ---------- render ---------- */
@@ -521,7 +502,7 @@ function renderGrid(seg) {
       <div class="why">${a.why}</div>
       <details>
         <summary>Signals, people &amp; opener</summary>
-        <h4>AI signals (via Exa)</h4>
+        <h4>Signals</h4>
         <ul>${a.signals.map(s => `<li>${s.text}${s.url ? ` <a href="${s.url}" target="_blank" rel="noopener">source ↗</a>` : ''}</li>`).join('')}</ul>
         <h4>Buying committee</h4>
         <ul class="committee">${a.committee.map(p => `<li><b>${p.name}</b>, ${p.title}${p.role ? ` <span class="role">${p.role}</span>` : ''}</li>`).join('')}</ul>
@@ -541,7 +522,7 @@ filterEl.addEventListener('click', e => {
 /* ---------- contact webset ---------- */
 const people = ACCOUNTS.flatMap(a => a.committee.map(p => ({...p, account: a.name, segment: a.segment, tier: a.tier})))
                        .sort((a,b) => a.tier - b.tier || a.account.localeCompare(b.account));
-document.getElementById('ccount').textContent = `· ${people.length} people across ${ACCOUNTS.length} accounts`;
+document.getElementById('ccount').textContent = `${people.length} people across ${ACCOUNTS.length} accounts`;
 document.getElementById('ctable').innerHTML = `
   <thead><tr><th>Name</th><th>Title</th>${people.some(p => p.role) ? '<th>Role</th>' : ''}<th>Account</th><th>Segment</th><th>Tier</th><th>Profile</th></tr></thead>
   <tbody>${people.map(p => `

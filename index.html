@@ -9,7 +9,7 @@
 <meta property="og:description" content="You searched for a Strategic AE. One verified result.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
 <script>
 !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
 posthog.init('phc_muTQQAqqXeRkoXwwpZubo5vKPLBmPdqA2NDgQtbWoc4B',{api_host:'https://us.i.posthog.com'});
@@ -26,18 +26,18 @@ posthog.init('phc_muTQQAqqXeRkoXwwpZubo5vKPLBmPdqA2NDgQtbWoc4B',{api_host:'https
 <style>
   :root {
     color-scheme: light;
-    --page: #fcfcfa;
-    --panel: #ffffff;
-    --ink: #131313;
-    --ink-2: #55554f;
-    --muted: #8a8a82;
-    --hairline: #e6e5df;
+    --page: #f3f1ea;
+    --panel: #fbfaf6;
+    --ink: #1d1c17;
+    --ink-2: #514f46;
+    --muted: #87857a;
+    --hairline: #dfdcd1;
     --accent: #2f6bdb;
     --accent-soft: #c9d8f7;
     --accent-wash: #f2f6fe;
     --good: #1b7f3b;
-    --serif: "Newsreader", Georgia, "Times New Roman", serif;
-    --sans: system-ui, -apple-system, "Segoe UI", sans-serif;
+    --serif: "Inter", system-ui, -apple-system, sans-serif;
+    --sans: "Inter", system-ui, -apple-system, sans-serif;
     --mono: ui-monospace, "SF Mono", Menlo, monospace;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -48,13 +48,13 @@ posthog.init('phc_muTQQAqqXeRkoXwwpZubo5vKPLBmPdqA2NDgQtbWoc4B',{api_host:'https
   a:hover { text-decoration: underline; }
 
   .kicker { font: 600 11px/1 var(--mono); letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
-  h2.display { font: 500 clamp(28px, 4vw, 40px)/1.15 var(--serif); letter-spacing: -0.01em; margin: 10px 0 8px; }
+  h2.display { font: 600 clamp(24px, 3.4vw, 34px)/1.2 var(--serif); letter-spacing: -0.02em; margin: 10px 0 8px; }
   .lede { color: var(--ink-2); font-size: 16.5px; max-width: 62ch; }
 
   /* ---------- nav ---------- */
   nav { display: flex; justify-content: space-between; align-items: center; padding: 22px 0; flex-wrap: wrap; gap: 10px; }
   nav .links { flex-wrap: wrap; align-items: center; }
-  .brand { font: 500 18px var(--serif); color: var(--ink); }
+  .brand { font: 600 17px var(--serif); color: var(--ink); }
   .brand span { color: var(--accent); }
   nav .links { display: flex; gap: 20px; font-size: 14px; }
   nav .links a { color: var(--ink-2); }
@@ -63,7 +63,7 @@ posthog.init('phc_muTQQAqqXeRkoXwwpZubo5vKPLBmPdqA2NDgQtbWoc4B',{api_host:'https
 
   /* ---------- hero ---------- */
   .hero { text-align: center; padding: 64px 0 28px; }
-  .hero h1 { font: 500 clamp(38px, 6.5vw, 64px)/1.08 var(--serif); letter-spacing: -0.015em; }
+  .hero h1 { font: 700 clamp(30px, 5.2vw, 52px)/1.12 var(--serif); letter-spacing: -0.025em; }
   .hero h1 em { font-style: italic; }
   .hero h1 .count { color: var(--accent); }
   .hero .sub { margin: 16px auto 0; color: var(--ink-2); font-size: 17.5px; max-width: 56ch; }
@@ -98,18 +98,18 @@ posthog.init('phc_muTQQAqqXeRkoXwwpZubo5vKPLBmPdqA2NDgQtbWoc4B',{api_host:'https
 
   .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-top: 26px; }
   .tile { background: var(--panel); border: 1px solid var(--hairline); border-radius: 12px; padding: 18px 20px; }
-  .tile .v { font: 500 34px/1.1 var(--serif); }
+  .tile .v { font: 600 30px/1.1 var(--serif); letter-spacing: -0.01em; }
   .tile .l { font-size: 13px; color: var(--ink-2); margin-top: 6px; }
 
   .logo-grid { display: grid; grid-template-columns: repeat(5, 1fr); margin-top: 26px; border: 1px solid var(--hairline); border-radius: 12px; overflow: hidden; background: var(--hairline); gap: 1px; }
   @media (max-width: 760px) { .logo-grid { grid-template-columns: repeat(2, 1fr); } }
-  .logo-grid div { background: var(--panel); padding: 20px 10px; text-align: center; font: 500 15px var(--serif); color: var(--ink); }
+  .logo-grid div { background: var(--panel); padding: 20px 10px; text-align: center; font: 600 14px var(--sans); color: var(--ink); }
   .logo-grid div span { display: block; font: 500 10.5px var(--mono); letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-top: 4px; }
 
   /* whelpdesk card */
   .product { display: grid; grid-template-columns: 120px 1fr; gap: 24px; background: var(--panel); border: 1px solid var(--hairline); border-radius: 14px; padding: 26px; margin-top: 26px; align-items: start; }
   .product img { width: 120px; height: 120px; border-radius: 24px; border: 1px solid var(--hairline); }
-  .product h3 { font: 500 24px var(--serif); }
+  .product h3 { font: 600 21px var(--serif); }
   .product p { color: var(--ink-2); font-size: 15px; margin-top: 6px; max-width: 60ch; }
   .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
   .chip { font: 600 12px var(--sans); border: 1px solid var(--hairline); background: var(--page); border-radius: 999px; padding: 5px 12px; color: var(--ink-2); }
@@ -141,7 +141,7 @@ posthog.init('phc_muTQQAqqXeRkoXwwpZubo5vKPLBmPdqA2NDgQtbWoc4B',{api_host:'https
 
   /* CTA */
   .cta { background: var(--ink); color: #fff; border-radius: 16px; padding: 40px; margin: 56px 0; display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; }
-  .cta h2 { font: 500 clamp(24px, 3.4vw, 34px)/1.15 var(--serif); }
+  .cta h2 { font: 600 clamp(21px, 2.8vw, 28px)/1.25 var(--serif); letter-spacing: -0.015em; }
   .cta p { color: #c9c8c0; margin-top: 8px; max-width: 52ch; font-size: 15.5px; }
   .cta a { background: #fff; color: var(--ink); font: 600 15px var(--sans); border-radius: 999px; padding: 13px 24px; white-space: nowrap; }
   .cta a:hover { text-decoration: none; background: var(--accent-soft); }
@@ -167,7 +167,7 @@ posthog.init('phc_muTQQAqqXeRkoXwwpZubo5vKPLBmPdqA2NDgQtbWoc4B',{api_host:'https
 
   <div class="panel" role="img" aria-label="Mock Webset result: one verified match, Matt Finneran">
     <div class="panel-q">
-      <div class="q">strategic account executive · enterprise SaaS · founder DNA · east coast<span class="caret"></span></div>
+      <div class="q">strategic account executive · enterprise SaaS · founder DNA<span class="caret"></span></div>
       <div class="tabs"><span class="tab">Search</span><span class="tab on">Websets</span></div>
     </div>
     <div class="panel-status">✓ ENRICHMENT COMPLETE <span class="n">· 2,847 candidates evaluated · 1 row verified</span></div>
@@ -179,7 +179,7 @@ posthog.init('phc_muTQQAqqXeRkoXwwpZubo5vKPLBmPdqA2NDgQtbWoc4B',{api_host:'https
       <tbody>
         <tr>
           <td class="who"><span class="avatar">MF</span><b>Matt Finneran</b></td>
-          <td>Raleigh, NC<span class="cell-sub">east coast ✓</span></td>
+          <td>Raleigh, NC</td>
           <td><span class="check">✓</span>2× founder<span class="cell-sub">both acquired</span></td>
           <td><span class="check">✓</span>$3M largest<span class="cell-sub">T-Mobile, C-level</span></td>
           <td><span class="check">✓</span>Live in App Store<span class="cell-sub">paying subscribers</span></td>
@@ -294,7 +294,7 @@ posthog.init('phc_muTQQAqqXeRkoXwwpZubo5vKPLBmPdqA2NDgQtbWoc4B',{api_host:'https
 
   <div class="cta">
     <div>
-      <h2>The work sample: an East Coast territory plan.</h2>
+      <h2>The work sample: a territory plan.</h2>
       <p>25 strategic accounts researched with Exa's own Search API: buying committees, dated AI signals
       with sources, and a why-Exa wedge for every account.</p>
     </div>
