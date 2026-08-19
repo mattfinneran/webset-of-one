@@ -102,6 +102,21 @@
   .product .links { margin-top: 14px; font-size: 14px; display: flex; gap: 18px; flex-wrap: wrap; }
   @media (max-width: 560px) { .product { grid-template-columns: 1fr; } }
 
+  /* stack dashboard */
+  .dash { background: var(--panel); border: 1px solid var(--hairline); border-radius: 14px; padding: 22px 24px; margin-top: 14px; }
+  .dash h4 { font: 600 10.5px var(--mono); letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 12px; }
+  .dash .row { display: grid; grid-template-columns: 170px 1fr 74px; gap: 12px; align-items: center; margin-bottom: 9px; }
+  .dash .row .n { font-size: 13.5px; color: var(--ink-2); text-align: right; }
+  .dash .row .n s { color: var(--muted); }
+  .dash .row .track { height: 16px; }
+  .dash .row .fill { height: 100%; background: var(--accent); border-radius: 0 4px 4px 0; }
+  .dash .row .fill.old { background: #d6d5cd; }
+  .dash .row .v { font: 500 12px var(--mono); color: var(--muted); }
+  .dash .split { border-top: 1px solid var(--hairline); margin: 16px 0; }
+  .dash .grp { display: grid; grid-template-columns: 170px 1fr; gap: 12px; margin-bottom: 10px; align-items: baseline; }
+  .dash .grp .k { font: 600 10.5px var(--mono); letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); text-align: right; }
+  @media (max-width: 560px) { .dash .row { grid-template-columns: 90px 1fr 64px; } .dash .grp { grid-template-columns: 1fr; gap: 4px; } .dash .grp .k, .dash .row .n { text-align: left; } }
+
   .facts { margin-top: 22px; display: grid; gap: 10px; }
   .fact { display: grid; grid-template-columns: 150px 1fr; gap: 14px; padding: 12px 0; border-bottom: 1px solid var(--hairline); font-size: 15px; }
   .fact:last-child { border-bottom: none; }
@@ -225,6 +240,17 @@
           <a href="https://littlewolves.com/pages/whelpdesk" target="_blank" rel="noopener">Product page ↗</a>
         </div>
       </div>
+    </div>
+    <div class="dash">
+      <h4>WhelpDesk codebase — lines shipped, by language</h4>
+      <div class="row"><div class="n"><s>Swift (v1–2, retired)</s></div><div class="track"><div class="fill old" style="width:100%"></div></div><div class="v">51.9K</div></div>
+      <div class="row"><div class="n">TypeScript (v3)</div><div class="track"><div class="fill" style="width:57%"></div></div><div class="v">29.5K</div></div>
+      <div class="row"><div class="n">SQL</div><div class="track"><div class="fill" style="width:7.5%"></div></div><div class="v">3.9K</div></div>
+      <div class="split"></div>
+      <div class="grp"><div class="k">Mobile</div><div class="chips"><span class="chip">Expo 54</span><span class="chip">React Native 0.81</span><span class="chip">expo-router</span><span class="chip">TanStack Query</span><span class="chip">Zustand</span><span class="chip">Zod</span><span class="chip">NativeWind</span><span class="chip">expo-iap</span><span class="chip">Sentry</span><span class="chip">PostHog</span></div></div>
+      <div class="grp"><div class="k">Web</div><div class="chips"><span class="chip">Next.js 16</span><span class="chip">Stripe</span><span class="chip">Supabase SSR</span><span class="chip">Recharts</span><span class="chip">PostHog</span></div></div>
+      <div class="grp"><div class="k">Backend</div><div class="chips"><span class="chip">Supabase</span><span class="chip">Postgres + RLS</span><span class="chip">15 CLI migrations</span><span class="chip">per-PR branch DBs</span></div></div>
+      <div class="grp"><div class="k">Commerce</div><div class="chips"><span class="chip">Shopify — littlewolves.com</span></div></div>
     </div>
     <div class="tiles">
       <div class="tile"><div class="v">622</div><div class="l">Commits shipped in 2026 (through August)</div></div>
