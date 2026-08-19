@@ -543,12 +543,12 @@ const people = ACCOUNTS.flatMap(a => a.committee.map(p => ({...p, account: a.nam
                        .sort((a,b) => a.tier - b.tier || a.account.localeCompare(b.account));
 document.getElementById('ccount').textContent = `· ${people.length} people across ${ACCOUNTS.length} accounts`;
 document.getElementById('ctable').innerHTML = `
-  <thead><tr><th>Name</th><th>Title</th><th>Role</th><th>Account</th><th>Segment</th><th>Tier</th><th>Profile</th></tr></thead>
+  <thead><tr><th>Name</th><th>Title</th>${people.some(p => p.role) ? '<th>Role</th>' : ''}<th>Account</th><th>Segment</th><th>Tier</th><th>Profile</th></tr></thead>
   <tbody>${people.map(p => `
     <tr>
       <td><b>${p.name}</b></td>
       <td class="t2">${p.title}</td>
-      <td>${p.role ? `<span class="role">${p.role}</span>` : ''}</td>
+      ${people.some(x => x.role) ? `<td>${p.role ? `<span class="role">${p.role}</span>` : ''}</td>` : ''}
       <td>${p.account}</td>
       <td class="t2">${p.segment}</td>
       <td><span class="pill p${p.tier}">TIER ${p.tier}</span></td>
