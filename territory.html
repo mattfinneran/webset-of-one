@@ -142,6 +142,7 @@
   .card li a:hover { color: var(--accent); }
   .dq { font-size: 13.5px; color: var(--ink-2); font-style: italic; }
   .committee li b { color: var(--ink); font-weight: 600; }
+  .role { font: 600 10px var(--mono); letter-spacing: 0.05em; text-transform: uppercase; background: var(--accent-wash); color: var(--accent); border-radius: 4px; padding: 1px 6px; white-space: nowrap; }
 
   /* ---------- footer ---------- */
   footer { border-top: 1px solid var(--hairline); padding: 36px 0 64px; font-size: 14px; color: var(--muted); }
@@ -510,7 +511,7 @@ function renderGrid(seg) {
         <h4>AI signals (via Exa)</h4>
         <ul>${a.signals.map(s => `<li>${s.text}${s.url ? ` <a href="${s.url}" target="_blank" rel="noopener">source ↗</a>` : ''}</li>`).join('')}</ul>
         <h4>Buying committee</h4>
-        <ul class="committee">${a.committee.map(p => `<li><b>${p.name}</b>, ${p.title}</li>`).join('')}</ul>
+        <ul class="committee">${a.committee.map(p => `<li><b>${p.name}</b>, ${p.title}${p.role ? ` <span class="role">${p.role}</span>` : ''}</li>`).join('')}</ul>
         <h4>Discovery opener</h4>
         <p class="dq">“${a.dq}”</p>
       </details>
@@ -529,11 +530,12 @@ const people = ACCOUNTS.flatMap(a => a.committee.map(p => ({...p, account: a.nam
                        .sort((a,b) => a.tier - b.tier || a.account.localeCompare(b.account));
 document.getElementById('ccount').textContent = `· ${people.length} people across ${ACCOUNTS.length} accounts`;
 document.getElementById('ctable').innerHTML = `
-  <thead><tr><th>Name</th><th>Title</th><th>Account</th><th>Segment</th><th>Tier</th><th>Profile</th></tr></thead>
+  <thead><tr><th>Name</th><th>Title</th><th>Role</th><th>Account</th><th>Segment</th><th>Tier</th><th>Profile</th></tr></thead>
   <tbody>${people.map(p => `
     <tr>
       <td><b>${p.name}</b></td>
       <td class="t2">${p.title}</td>
+      <td>${p.role ? `<span class="role">${p.role}</span>` : ''}</td>
       <td>${p.account}</td>
       <td class="t2">${p.segment}</td>
       <td><span class="pill p${p.tier}">TIER ${p.tier}</span></td>
