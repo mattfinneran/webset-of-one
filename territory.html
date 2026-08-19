@@ -159,7 +159,7 @@
   <div class="wrap">
     <div class="kicker">The work sample · built with Exa</div>
     <h1>East Coast Territory Plan</h1>
-    <p class="sub">Twenty-five strategic accounts from Boston to Atlanta — buying committees mapped, AI-initiative
+    <p class="sub">Twenty-five strategic accounts from Boston to Atlanta: buying committees mapped, AI-initiative
     signals surfaced, and a why-Exa wedge for each. Every fact on this page was retrieved with Exa's own
     Search API.</p>
     <p class="byline">Prepared by <strong>Matt Finneran</strong> · August 2026 · not an official Exa property</p>
@@ -171,7 +171,7 @@
 
   <div class="story">
     <strong>The point of this page:</strong> it is its own product demo. The signals, people, and sources below
-    weren't pulled from a data vendor — they came from live Exa searches run while building this plan.
+    weren't pulled from a data vendor. They came from live Exa searches run while building this plan.
     If Exa can build an AE's territory plan, it can power your customers' agents.
   </div>
 
@@ -187,14 +187,14 @@
   <section class="contacts-sec" aria-label="Contact webset">
     <div class="kicker">The contact webset</div>
     <h2>The people to call.</h2>
-    <p class="lede">Every buying-committee member across the territory, flattened into one working list —
+    <p class="lede">Every buying-committee member across the territory, flattened into one working list,
     the way a Webset would return it. Names and titles are public record, verified through the same Exa
     searches that built the account cards.</p>
     <div class="cpanel">
       <div class="cstatus">✓ ENRICHMENT COMPLETE <span class="n" id="ccount"></span></div>
       <div class="ctblwrap"><table class="cweb" id="ctable"></table></div>
       <div class="cnote">Direct contact details (email, phone) are enriched privately per outreach sequence and kept
-      off the public page — compliant selling starts with how you handle data. LinkedIn links open a people search
+      off the public page. Compliant selling starts with how you handle data. LinkedIn links open a people search
       for the name + company.</div>
     </div>
   </section>
@@ -203,8 +203,8 @@
 <footer>
   <div class="wrap">
     <h2>Methodology</h2>
-    <p>Research was run through Exa's MCP server (<code>web_search_advanced_exa</code>) — the same neural
-    search API Exa sells — orchestrated by Claude agents across 56 live queries. Each account got targeted
+    <p>Research was run through Exa's MCP server (<code>web_search_advanced_exa</code>), the same neural
+    search API Exa sells, orchestrated by Claude agents across 56 live queries. Each account got targeted
     queries for AI initiatives, platform builds, hiring signals, and named AI leadership; only publicly
     verifiable facts with sources made the cut. Tiering reflects signal strength and wedge clarity, not
     company size. The contact webset lists names and titles from public record; direct contact details are
@@ -214,202 +214,202 @@
 </footer>
 
 <script>
-/* DATA — every signal below was retrieved via Exa's web_search_advanced_exa (Aug 19, 2026) */
+/* DATA: every signal below was retrieved via Exa's web_search_advanced_exa (Aug 19, 2026) */
 const EXA_QUERIES = 56;
 const ACCOUNTS = [
 {name:"JPMorgan Chase",segment:"Banking",hq:"New York, NY",tier:1,
  snapshot:"~319K employees · largest US bank · $19.8B tech budget",
- why:"Long-running autonomous agents need citation-grade, real-time web grounding — LLM Suite is model-agnostic and connector-driven, so Exa slots in as the web-retrieval layer for banker and research copilots.",
+ why:"Long-running autonomous agents need citation-grade, real-time web grounding. LLM Suite is model-agnostic and connector-driven, so Exa slots in as the web-retrieval layer for banker and research copilots.",
  signals:[
   {text:"LLM Suite on ~250K desktops; 450 AI use cases in production, ~$1.5B reported savings (Apr 2026)",url:"https://payspacemagazine.com/articles/jpmorgan-chase-deploys-generative-ai-across-250000-employee-desktops-reports-1-5-billion-in-savings/"},
   {text:"Deploying long-running autonomous agents later in 2026; AI already drove +20% private-banking gross sales (Jun 2026)",url:"https://www.cnbc.com/2026/06/09/jpmorgan-chase-ai-agents.html"},
   {text:"50%+ employee AI adoption via bottom-up assistant building (Dec 2025)",url:"https://venturebeat.com/orchestration/jp-morgans-ai-adoption-hit-50-of-employees-the-secret-a-connectivity-first"}],
  committee:[{name:"Lori Beer",title:"Global CIO"},{name:"Teresa Heitsenrether",title:"Chief Data & Analytics Officer"},{name:"Derek Waldron",title:"Chief Analytics Officer"},{name:"Manuela Veloso",title:"Head of AI Research"}],
- dq:"When your long-running agents need live external data — filings, news, company facts — what is the retrieval layer today, and how do you audit its sources?"},
+ dq:"When your long-running agents need live external data (filings, news, company facts), what is the retrieval layer today, and how do you audit its sources?"},
 
 {name:"Goldman Sachs",segment:"Banking",hq:"New York, NY",tier:1,
  snapshot:"~46K employees · global investment banking, markets, asset & wealth mgmt",
- why:"Client onboarding and vetting agents need structured, verifiable web research at scale — Websets for entity lists plus Search API grounding for the GS AI Platform's external-data layer.",
+ why:"Client onboarding and vetting agents need structured, verifiable web research at scale: Websets for entity lists plus Search API grounding for the GS AI Platform's external-data layer.",
  signals:[
   {text:"Anthropic engineers embedded 6 months co-building Claude agents for trade accounting + client onboarding (Feb 2026)",url:"https://www.cnbc.com/2026/02/06/anthropic-goldman-sachs-ai-model-accounting.html"},
   {text:"GS AI Assistant firmwide; 1M+ prompts per month from bankers, traders, asset managers (Sep 2025)",url:"https://observer.com/2025/09/interview-marco-argenti-goldman-sachs-ai-strategy/"},
   {text:"Hired Daniel Marcu (ex-Amazon AGI) as Partner, Global Head of AI Engineering & Science (Mar 2025)",url:"https://www.goldmansachs.com/pressroom/press-releases/2025/daniel-marcu-joins-gs-as-partner-and-global-head-of-ai-engineering-and-science"}],
  committee:[{name:"Marco Argenti",title:"CIO"},{name:"Daniel Marcu",title:"Global Head of AI Engineering & Science"},{name:"George Lee",title:"Co-Head, GS Global Institute"}],
- dq:"Your onboarding agents vet clients against the open web — how are you sourcing and verifying that external data today, and what does a false positive cost?"},
+ dq:"Your onboarding agents vet clients against the open web. How are you sourcing and verifying that external data today, and what does a false positive cost?"},
 
 {name:"Morgan Stanley",segment:"Banking",hq:"New York, NY",tier:2,
  snapshot:"~80K employees · investment banking, wealth mgmt, institutional securities",
- why:"AskResearchGPT is internal-only RAG — advisors still lack live web context (news, filings, life events). Exa adds real-time grounding; Websets powers advisor prospecting lists.",
+ why:"AskResearchGPT is internal-only RAG. Advisors still lack live web context (news, filings, life events). Exa adds real-time grounding; Websets powers advisor prospecting lists.",
  signals:[
   {text:"~98% of employees have access to at least one AI program; hundreds of GenAI use cases (Jun 2026)",url:"https://www.americanbanker.com/news/morgan-stanleys-michael-pizzi-is-27-on-the-most-innovative-people-in-finance-ranking"},
   {text:"First major bank opening wealth platforms to external corporate AI agents (Jun 2026)",url:"https://www.cnbc.com/2026/06/03/ai-agents-morgan-stanley-wealth-management-funnel.html"},
   {text:"AskResearchGPT: RAG over 100K+ internal research docs for advisors (Jun 2026)",url:"https://forsmile.jp/en/articles/morgan-stanley-ai-gpt4-knowledge-search-efficiency-20260619"}],
  committee:[{name:"Jeff McMillan",title:"Head of Firmwide AI"},{name:"Michael Pizzi",title:"EVP, Global Head of Technology & Operations"},{name:"Katy Huberty",title:"Global Head of Research"}],
- dq:"AskResearchGPT answers from internal research — what happens when an advisor's question depends on something that happened this morning?"},
+ dq:"AskResearchGPT answers from internal research. What happens when an advisor's question depends on something that happened this morning?"},
 
 {name:"Capital One",segment:"Banking",hq:"McLean, VA",tier:2,
  snapshot:"~52K employees · top-10 US bank, proprietary-AI and cloud-native strategy",
- why:"They build agents in-house on proprietary data — the gap is real-time, compliant web grounding (inventory, market and rate context). Exa slots into the existing multi-agent workflow without replacing it.",
+ why:"They build agents in-house on proprietary data. The gap is real-time, compliant web grounding (inventory, market and rate context). Exa slots into the existing multi-agent workflow without replacing it.",
  signals:[
-  {text:"Chat Concierge: first proprietary multi-agentic AI for auto dealers/buyers — plans, validates, executes (Mar 2025)",url:"https://www.capitalone.com/tech/ai/future-of-ai-car-dealerships-shopping/"},
+  {text:"Chat Concierge: first proprietary multi-agentic AI for auto dealers/buyers: plans, validates, executes (Mar 2025)",url:"https://www.capitalone.com/tech/ai/future-of-ai-car-dealerships-shopping/"},
   {text:"Only financial institution among top US patent holders in agentic/generative AI; 5,000+ patents (Jun 2025)",url:"https://www.capitalone.com/tech/ai/innovating-financial-services-through-customer-centered-ai/"},
   {text:"IEEE Spectrum profile of its enterprise-AI org under Prem Natarajan (Jun 2026)",url:"https://spectrum.ieee.org/capital-one-science-ai-finance-innovation"}],
  committee:[{name:"Prem Natarajan",title:"EVP, Chief Scientist & Head of Enterprise AI"},{name:"Rob Alexander",title:"CIO"},{name:"Sanjiv Yajnik",title:"President, Financial Services"}],
- dq:"When Chat Concierge's agents need current information outside your data ecosystem, how do they retrieve it today — and who owns that retrieval layer?"},
+ dq:"When Chat Concierge's agents need current information outside your data ecosystem, how do they retrieve it today, and who owns that retrieval layer?"},
 
 {name:"BlackRock",segment:"Asset Management",hq:"New York, NY",tier:2,
  snapshot:"~21K employees · world's largest asset manager · Aladdin platform",
- why:"Aladdin Copilot and Auto Commentary synthesize portfolio analytics but lack live market and news context — Exa provides real-time web grounding inside Aladdin's AI layer, sellable across every Aladdin client.",
+ why:"Aladdin Copilot and Auto Commentary synthesize portfolio analytics but lack live market and news context. Exa provides real-time web grounding inside Aladdin's AI layer, sellable across every Aladdin client.",
  signals:[
   {text:"Aladdin Wealth Auto Commentary GenAI tool launched; Morgan Stanley first client (Oct 2025)",url:"https://www.businesswire.com/news/home/20251002577295/en/"},
   {text:"Aladdin Copilot (natural-language risk/scenario queries, Microsoft partnership) launched late 2025 (Jun 2026)",url:"https://usabusinesstimes.com/blackrocks-aladdin-platform-still-the-nervous-system-of-wall-street/"},
   {text:"Nish Ajitsaria named firmwide Executive Sponsor for AI",url:"https://www.blackrock.com/corporate/about-us/leadership/nish-ajitsaria"}],
  committee:[{name:"Rob Goldstein",title:"COO"},{name:"Sudhir Nair",title:"Global Head of Aladdin"},{name:"Nish Ajitsaria",title:"Co-Head, Aladdin Product Engineering · AI Executive Sponsor"}],
- dq:"Auto Commentary blends Aladdin analytics with your CIO outlook — where does live market news enter that pipeline, and who validates its sources?"},
+ dq:"Auto Commentary blends Aladdin analytics with your CIO outlook. Where does live market news enter that pipeline, and who validates its sources?"},
 
 {name:"Citadel",segment:"Asset Management",hq:"Miami, FL · NYC",tier:1,
  snapshot:"~3K employees · multi-strategy hedge fund, ~$65B+ AUM",
- why:"Their AI Assistant runs on licensed and internal content only — Exa adds fast, semantically precise open-web retrieval (niche sources, primary documents) for the agentic research loops Griffin is publicly touting.",
+ why:"Their AI Assistant runs on licensed and internal content only. Exa adds fast, semantically precise open-web retrieval (niche sources, primary documents) for the agentic research loops Griffin is publicly touting.",
  signals:[
-  {text:"Citadel AI Assistant launched for equities investors — licensed transcripts, filings, brokerage research (Dec 2025)",url:"https://www.reuters.com/business/citadel-debuts-new-ai-tool-equities-investors-cto-subramanian-says-2025-12-03/"},
+  {text:"Citadel AI Assistant launched for equities investors: licensed transcripts, filings, brokerage research (Dec 2025)",url:"https://www.reuters.com/business/citadel-debuts-new-ai-tool-equities-investors-cto-subramanian-says-2025-12-03/"},
   {text:"Near-universal adoption among fundamental equity PMs (Dec 2025)",url:"https://www.businessinsider.com/citadel-ai-chatbot-investors-umesh-subramanian-2025-12"},
   {text:"Griffin: agentic AI reproduces PhD-level finance research in 2–3 hours vs 6–8 weeks (May 2026)",url:"https://fortune.com/2026/05/18/billionaire-ken-griffin-ai-garbage-depressed-dramatic-impact-society/"}],
  committee:[{name:"Ken Griffin",title:"Founder & CEO"},{name:"Umesh Subramanian",title:"CTO"},{name:"Francis Giannaros",title:"MD, Head of AI"},{name:"Peng Zhao",title:"CEO, Citadel Securities"}],
- dq:"Your research agents compress 8 weeks of work into 3 hours on licensed data — how much alpha is left in web sources those agents can't reach yet?"},
+ dq:"Your research agents compress 8 weeks of work into 3 hours on licensed data. How much alpha is left in web sources those agents can't reach yet?"},
 
 {name:"Two Sigma",segment:"Asset Management",hq:"New York, NY",tier:2,
  snapshot:"~2K employees · quantitative hedge fund, ~$60B+ AUM",
- why:"Their own writing says LLM-derived text features are the new alpha frontier — Exa's neural search and full-text retrieval is a programmatic, backtestable web-data feed for feature research, not a chatbot.",
+ why:"Their own writing says LLM-derived text features are the new alpha frontier. Exa's neural search and full-text retrieval is a programmatic, backtestable web-data feed for feature research, not a chatbot.",
  signals:[
   {text:"CTO Jeff Wecker: integrating LLMs across alpha identification, legal, and compliance (Jan 2026)",url:"https://www.twosigma.com/articles/ai-in-investment-management-2026-outlook-part-ii/"},
   {text:"Hired Goldman Sachs applied-AI lead as SVP, AI & ML for the quant research platform (Jan 2026)",url:"https://www.efinancialcareers.co.uk/news/two-sigma-goldman-sachs-applied-ai"},
   {text:"Thesis piece on LLM-derived features as new alpha signals (Jul 2026)",url:"https://www.twosigma.com/articles/anything-can-be-language-now-my-thoughts-on-the-future-of-features-research/"}],
  committee:[{name:"Jeff Wecker",title:"CTO & Head of Engineering"},{name:"Mike Schuster",title:"MD, Head of AI Core (ex-Google Brain)"},{name:"Ali-Milan Nekmouche",title:"Head of AI Strategy"},{name:"Ben Wellington",title:"Head of Complex Feature Engines"}],
- dq:"Your 2026 outlook puts LLM-generated text features at the center of alpha research — what's your pipeline for clean, timestamped web text at scale, and where does it break?"},
+ dq:"Your 2026 outlook puts LLM-generated text features at the center of alpha research. What's your pipeline for clean, timestamped web text at scale, and where does it break?"},
 
 {name:"Fidelity Investments",segment:"Asset Management",hq:"Boston, MA",tier:2,
  snapshot:"~75K employees · asset mgmt, brokerage, retirement, wealth services",
- why:"Building enterprise AI platforms internally at massive scale — Exa provides compliant, citation-backed real-time web grounding for copilots and advisor research tools; Websets for structured prospect intelligence.",
+ why:"Building enterprise AI platforms internally at massive scale. Exa provides compliant, citation-backed real-time web grounding for copilots and advisor research tools; Websets for structured prospect intelligence.",
  signals:[
   {text:"Simultaneous job cuts + hiring spree in a tech/product reorg tied to its AI push (May 2026)",url:"https://www.bostonglobe.com/2026/05/07/business/fidelity-hiring-spree-job-cuts-return-to-office/"},
   {text:"Saifr (Fidelity Labs venture) AI agents integrating into Superhuman/Grammarly for compliant comms (Jan 2026)",url:"https://www.businesswire.com/news/home/20260113862730/en/"},
   {text:"Wealthscape advisor platform relaunched with AI embedded (Sep 2025)",url:"https://riabiz.com/a/2025/9/17/fidelity-touts-renewed-wealthscape-but-departs-from-the-ai-hype-with-low-key-launch-its-part-of-the-larger-story-not-necessarily-the-story-company-says"}],
  committee:[{name:"Man Chon (MC) U",title:"SVP & CIO, Global Head of Enterprise Data & AI"},{name:"Himanshu Kalkar",title:"SVP, Head of Products, AI & Tech"},{name:"Sachin Solkhan",title:"VP, AI Product Engineering"}],
- dq:"As you rebuild the tech org around AI platforms, what's your standard for letting an internal copilot cite live web content — and which team owns that retrieval layer?"},
+ dq:"As you rebuild the tech org around AI platforms, what's your standard for letting an internal copilot cite live web content, and which team owns that retrieval layer?"},
 
 {name:"Bloomberg",segment:"Data & Ratings",hq:"New York, NY",tier:1,
  snapshot:"~21K+ employees · financial data, analytics, news, the Terminal",
- why:"ASKB's grounding obsession stops at Bloomberg's own corpus — Exa gives their agents the same verifiable-source, no-world-knowledge guarantee for the open web, via one search API built for agents.",
+ why:"ASKB's grounding obsession stops at Bloomberg's own corpus. Exa gives their agents the same verifiable-source, no-world-knowledge guarantee for the open web, via one search API built for agents.",
  signals:[
-  {text:"ASKB: agentic conversational AI in the Terminal (beta) — parallel agents fetch data/documents in real time (Feb 2026)",url:"https://www.bloomberg.com/company/stories/meet-askb-bloomberg-introduces-agentic-ai-to-the-bloomberg-terminal/"},
+  {text:"ASKB: agentic conversational AI in the Terminal (beta): parallel agents fetch data/documents in real time (Feb 2026)",url:"https://www.bloomberg.com/company/stories/meet-askb-bloomberg-introduces-agentic-ai-to-the-bloomberg-terminal/"},
   {text:"ASKB roadmap: Workflows automation, RMS Enterprise integration, blending proprietary knowledge (Apr 2026)",url:"https://www.bloomberg.com/professional/insights/press-announcement/bloomberg-unveils-askb-roadmap-for-clients-to-augment-their-investment-process-with-agentic-ai/"},
-  {text:"CTO Shawn Edwards: validators at every step, source-of-truth retrieval only — never answer from model memory (Jul 2026)",url:"https://observer.com/2026/07/bloomberg-cto-shawn-edwards-on-building-ai-that-cant-bluff-interview/"}],
+  {text:"CTO Shawn Edwards: validators at every step, source-of-truth retrieval only, never answer from model memory (Jul 2026)",url:"https://observer.com/2026/07/bloomberg-cto-shawn-edwards-on-building-ai-that-cant-bluff-interview/"}],
  committee:[{name:"Shawn Edwards",title:"CTO"},{name:"Vlad Kliatchko",title:"CEO"},{name:"Wayne Barlow",title:"Global Head of Terminal Products"},{name:"James Hook",title:"Global Head of Data"}],
- dq:"ASKB refuses to answer from model memory — when a query needs the open web instead of Bloomberg's corpus, what retrieval layer meets that same evidence bar?"},
+ dq:"ASKB refuses to answer from model memory. When a query needs the open web instead of Bloomberg's corpus, what retrieval layer meets that same evidence bar?"},
 
 {name:"S&P Global",segment:"Data & Ratings",hq:"New York, NY",tier:2,
  snapshot:"~40K employees · ratings, indices, commodity insights, market intelligence",
- why:"They're productizing retrieval for agents (LLM-ready API, MCP, Adaptive Retrieval) — Exa is the complementary open-web leg: real-time news, filings, long-tail private-company coverage; Websets to refresh entity universes.",
+ why:"They're productizing retrieval for agents (LLM-ready API, MCP, Adaptive Retrieval). Exa is the complementary open-web leg: real-time news, filings, long-tail private-company coverage; Websets to refresh entity universes.",
  signals:[
-  {text:"Adaptive Retrieval launched — dual deterministic + adaptive data access for agentic workflows (Jul 2026)",url:"https://www.prnewswire.com/news-releases/sp-global-launches-adaptive-retrieval-giving-customers-a-new-way-to-access-data-across-ai-and-agentic-workflows-302831022.html"},
+  {text:"Adaptive Retrieval launched: dual deterministic + adaptive data access for agentic workflows (Jul 2026)",url:"https://www.prnewswire.com/news-releases/sp-global-launches-adaptive-retrieval-giving-customers-a-new-way-to-access-data-across-ai-and-agentic-workflows-302831022.html"},
   {text:"Partnership with Cohere: S&P data inside the North enterprise agent platform (Jun 2026)",url:"https://www.prnewswire.com/news-releases/sp-global-expands-ai-ecosystem-reach-with-cohere-to-power-trusted-agentic-workflows-for-financial-institutions-302793973.html"},
   {text:"Kensho LLM-ready API + remote MCP server for Claude and MCP-compatible agents (2025–26)",url:"https://kensho.com/news/kensho-llm-ready-api-expands-mcp-server-access-dataset-support-integrations"}],
  committee:[{name:"Bhavesh Dayalji",title:"Chief AI Officer · CEO, Kensho"},{name:"Firdaus Bhathena",title:"Chief Technology & Transformation Officer"},{name:"Martina Cheung",title:"President & CEO"}],
- dq:"Adaptive Retrieval covers S&P's own data — when your agents need live open-web evidence on a private company or breaking event, what fills that gap?"},
+ dq:"Adaptive Retrieval covers S&P's own data. When your agents need live open-web evidence on a private company or breaking event, what fills that gap?"},
 
 {name:"Moody's",segment:"Data & Ratings",hq:"New York, NY",tier:1,
  snapshot:"~15K employees · credit ratings + risk and decision-intelligence analytics",
- why:"Their agents assess private counterparties where proprietary data thins out — Exa's agent-native search plus Websets deliver structured, current open-web evidence (adverse media, ownership, events) as a drop-in tool.",
+ why:"Their agents assess private counterparties where proprietary data thins out. Exa's agent-native search plus Websets deliver structured, current open-web evidence (adverse media, ownership, events) as a drop-in tool.",
  signals:[
   {text:"Moody's Agentic Solutions launched; credit memo prep cut from ~40 hours to ~2 minutes (Sep 2025)",url:"https://venturebeat.com/technology/moodys-cut-credit-memo-prep-from-40-hours-to-2-minutes-with-modular-ai"},
-  {text:"Agentic Solutions available natively inside Anthropic's Claude — credit + compliance workflows (Apr 2026)",url:"https://www.moodys.com/web/en/us/media-relations/press-releases/moodys-brings-credit-and-compliance-workflows-directly-into-anthropics-claude.html"},
+  {text:"Agentic Solutions available natively inside Anthropic's Claude: credit + compliance workflows (Apr 2026)",url:"https://www.moodys.com/web/en/us/media-relations/press-releases/moodys-brings-credit-and-compliance-workflows-directly-into-anthropics-claude.html"},
   {text:"Decision-grade AI skills launched on Microsoft 365 Copilot, expanding to other platforms (Jun 2026)",url:"https://www.moodys.com/web/en/us/media-relations/press-releases/moodys-launches-decision-grade-ai-skills-for-major-ai-platforms.html"}],
  committee:[{name:"Nick Reed",title:"Chief Product Officer"},{name:"Cristina Pieretti",title:"GM, Digital Content & Innovation"},{name:"Wade Moss",title:"Head of AI & Data Platforms"}],
- dq:"When an Agentic Solutions workflow hits a private counterparty with sparse coverage, how do your agents gather fresh open-web evidence — and who has to check it?"},
+ dq:"When an Agentic Solutions workflow hits a private counterparty with sparse coverage, how do your agents gather fresh open-web evidence, and who has to check it?"},
 
 {name:"Thomson Reuters",segment:"Data & Ratings",hq:"Toronto · NYC",tier:2,
  snapshot:"~26K employees · legal, tax, compliance content & technology",
- why:"CoCounsel's agentic workflows are grounded in Westlaw and Practical Law — but real matters need live open-web facts (regulators, dockets, company news). Exa adds compliant real-time web retrieval to the new agentic framework.",
+ why:"CoCounsel's agentic workflows are grounded in Westlaw and Practical Law, but real matters need live open-web facts (regulators, dockets, company news). Exa adds compliant real-time web retrieval to the new agentic framework.",
  signals:[
   {text:"CoCounsel Legal + Westlaw Advantage with agentic deep research (Aug 2025)",url:"https://www.law.com/legaltechnews/2025/08/05/"},
   {text:"Agentic workflows autonomously executing multi-step legal tasks; bulk review of up to 10K documents (Nov 2025)",url:"https://www.thomsonreuters.com/en/press-releases/2025/november/thomson-reuters-reveals-new-agentic-ai-in-cocounsel-legal"},
   {text:"Next-gen CoCounsel rebuilt from scratch on Anthropic models; GA Aug 2026 (Jun 2026)",url:"https://www.lawnext.com/2026/06/thomson-reuters-opens-early-access-to-the-next-generation-of-cocounsel-legal"}],
  committee:[{name:"Steve Hasker",title:"President & CEO"},{name:"Joel Hron",title:"CTO (ex-Global Head of AI & TR Labs)"},{name:"David Wong",title:"Chief Product Officer"},{name:"Raghu Ramanathan",title:"President, Legal Professionals"}],
- dq:"Now that CoCounsel plans and executes workflows autonomously, what happens when a step needs information outside Westlaw — how does the agent reach the open web?"},
+ dq:"Now that CoCounsel plans and executes workflows autonomously, what happens when a step needs information outside Westlaw: how does the agent reach the open web?"},
 
 {name:"Liberty Mutual",segment:"Insurance",hq:"Boston, MA",tier:2,
  snapshot:"~40K employees · global P&C insurer, ~$50B revenue",
- why:"LibertyGPT is grounded in internal data only — underwriting and claims copilots need live external context (businesses, properties, risk events). Exa is a natural buy on their explicit 30-capability list.",
+ why:"LibertyGPT is grounded in internal data only. Underwriting and claims copilots need live external context (businesses, properties, risk events). Exa is a natural buy on their explicit 30-capability list.",
  signals:[
   {text:"LibertyGPT internal GenAI platform reaches 74% of employees; multi-model hub (Jan 2026)",url:"https://www.forbes.com/sites/randybean/2026/01/19/how-liberty-mutual-insurance-is-using-data-and-ai-to-deliver-value-to-its-customers-and-employees/"},
   {text:"50 GenAI use cases in production/scaling; 30+ AI capabilities on a build-or-buy list (Feb 2026)",url:"https://www.cio.com/article/4135220/using-ai-to-unlock-human-potential-at-liberty-mutual.html"},
   {text:"Building AI agents for IT service; continuous startup-vendor test pipeline (Oct 2025)",url:"https://fastforward.boldstart.vc/how-liberty-mutuals-cio-is-leading-the-shift-from-ai-experimentation-to-execution/"}],
  committee:[{name:"Monica Caldas",title:"EVP & Global CIO"},{name:"Tony Marron",title:"Managing Director, Liberty IT"},{name:"Emily Lyons",title:"Chief Enterprise Data & Data Science Officer"}],
- dq:"Of your 50 production use cases, which ones stall because the model needs current external-world data — a business, a property, a risk event — rather than internal documents?"},
+ dq:"Of your 50 production use cases, which ones stall because the model needs current external-world data (a business, a property, a risk event) rather than internal documents?"},
 
 {name:"Chubb",segment:"Insurance",hq:"New York, NY (exec offices)",tier:1,
  snapshot:"~43K employees · world's largest publicly traded P&C insurer",
- why:"Automating 85% of underwriting and claims means agents must research risks at machine speed — company financials, litigation, property and news signals. Search API plus Websets is the external-data engine for that program.",
+ why:"Automating 85% of underwriting and claims means agents must research risks at machine speed: company financials, litigation, property and news signals. Search API plus Websets is the external-data engine for that program.",
  signals:[
   {text:"Radical automation goals: 85% of major underwriting/claims processes, up to 20% workforce reduction over 3–4 years (Dec 2025)",url:"https://www.insurancebusinessmag.com/us/news/breaking-news/chubb-to-cut-up-to-20-of-workforce-in-radical-ai-drive-559950.aspx"},
-  {text:"AI-powered optimization engine launched in Chubb Studio — 250+ embedded-insurance digital partners (Nov 2025)",url:"https://news.chubb.com/2025-11-12-Chubb-Launches-AI-Powered-Embedded-Insurance-Engine"},
+  {text:"AI-powered optimization engine launched in Chubb Studio: 250+ embedded-insurance digital partners (Nov 2025)",url:"https://news.chubb.com/2025-11-12-Chubb-Launches-AI-Powered-Embedded-Insurance-Engine"},
   {text:"Greenberg shareholder letter: heavy investment in algorithmic tools + LLMs across underwriting, claims, marketing (Mar 2026)",url:"https://www.insurancebusinessmag.com/us/news/breaking-news/chubb-ceo-signals-significant-workforce-reductions-as-ai-strategy-accelerates-568927.aspx"}],
  committee:[{name:"Evan Greenberg",title:"Chairman & CEO"},{name:"Sean Ringsted",title:"Chief Digital Business Officer"},{name:"Adrian Tonge",title:"EVP & Chief Data & Analytics Officer, NA"}],
- dq:"To hit 85% underwriting automation, what does an agent do today when a submission needs research — the insured's operations, litigation, exposures — that isn't in your internal data?"},
+ dq:"To hit 85% underwriting automation, what does an agent do today when a submission needs research (the insured's operations, litigation, exposures) that isn't in your internal data?"},
 
 {name:"IBM",segment:"Tech & SaaS",hq:"Armonk, NY",tier:2,
  snapshot:"~270K employees · hybrid cloud + AI: watsonx, Granite, consulting",
- why:"An embed play, not just internal use — watsonx Orchestrate agents and IBM Consulting client builds need web search-and-research as a native capability. Exa as the retrieval layer in the agent catalog scales with a $12.5B+ GenAI book.",
+ why:"An embed play, not just internal use: watsonx Orchestrate agents and IBM Consulting client builds need web search-and-research as a native capability. Exa as the retrieval layer in the agent catalog scales with a $12.5B+ GenAI book.",
  signals:[
   {text:"GenAI book of business surpassed $12.5B (Q4 2025 earnings, Jan 2026)",url:"https://newsroom.ibm.com/2026-01-28-IBM-RELEASES-FOURTH-QUARTER-RESULTS"},
   {text:"watsonx Orchestrate agent build/run/manage, 80+ business-app integrations; Rob Thomas on orchestrating hundreds of agents per company (May 2025)",url:"https://newsroom.ibm.com/2025-05-06-ibm-accelerates-enterprise-gen-ai-revolution-with-hybrid-capabilities"},
   {text:"IBM–Oracle partnership expansion: multi-agent workflows and Granite on OCI (May 2025)",url:"https://newsroom.ibm.com/2025-05-06-ibm-and-oracle-expand-partnership-to-advance-agentic-ai-and-hybrid-cloud"}],
  committee:[{name:"Arvind Krishna",title:"Chairman, President & CEO"},{name:"Rob Thomas",title:"SVP Software & Chief Commercial Officer"},{name:"Ritika Gunnar",title:"GM, Data & AI"}],
- dq:"As clients deploy hundreds of Orchestrate agents, what's your standard answer when an agent's task requires live web knowledge — and is that a capability you'd rather build, or embed?"},
+ dq:"As clients deploy hundreds of Orchestrate agents, what's your standard answer when an agent's task requires live web knowledge, and is that a capability you'd rather build, or embed?"},
 
 {name:"MongoDB",segment:"Tech & SaaS",hq:"New York, NY",tier:2,
  snapshot:"~5.5K employees · Atlas developer data platform · 50K+ customers",
- why:"Voyage and Atlas cover retrieval over customers' own data — Exa is the complementary web corpus. A partnership wedge: joint reference architectures combining Atlas vector search with Exa live web search.",
+ why:"Voyage and Atlas cover retrieval over customers' own data. Exa is the complementary web corpus. A partnership wedge: joint reference architectures combining Atlas vector search with Exa live web search.",
  signals:[
-  {text:"Acquired Voyage AI ($220M) — embedding/reranking models for database-native retrieval (Feb 2025)",url:"https://www.mongodb.com/company/newsroom/press-releases/mongodb-announces-acquisition-of-voyage-ai"},
+  {text:"Acquired Voyage AI ($220M): embedding/reranking models for database-native retrieval (Feb 2025)",url:"https://www.mongodb.com/company/newsroom/press-releases/mongodb-announces-acquisition-of-voyage-ai"},
   {text:"Voyage native in Atlas: Voyage 4 models, semantic video retrieval, auto-embedding for Vector Search (Sep 2025)",url:"https://www.mongodb.com/products/platform/ai-search-and-retrieval"},
   {text:"Leadership rebuilt for the AI era: CJ Desai (ex-ServiceNow/Cloudflare) as President & CEO",url:"https://www.mongodb.com/company/leadership"}],
  committee:[{name:"CJ Desai",title:"President & CEO"},{name:"Jim Scharf",title:"CTO"},{name:"Benjamin Cefalo",title:"Chief Product Officer, Core Products"},{name:"Tengyu Ma",title:"Founder, Voyage AI"}],
- dq:"Your customers' agents retrieve beautifully from their own data in Atlas — what do you recommend when the same agent needs fresh knowledge from the open web?"},
+ dq:"Your customers' agents retrieve beautifully from their own data in Atlas. What do you recommend when the same agent needs fresh knowledge from the open web?"},
 
 {name:"Datadog",segment:"Tech & SaaS",hq:"New York, NY",tier:1,
  snapshot:"~6K+ employees · cloud observability and security for the AI era",
- why:"Bits agents reason over internal telemetry, but investigations routinely need external context — CVEs, vendor status pages, GitHub issues, release notes. Exa gives Bits real-time web grounding as a native tool in its MCP-based agent harness.",
+ why:"Bits agents reason over internal telemetry, but investigations routinely need external context: CVEs, vendor status pages, GitHub issues, release notes. Exa gives Bits real-time web grounding as a native tool in its MCP-based agent harness.",
  signals:[
-  {text:"DASH 2026: 100+ launches; Bits AI goes fully autonomous — Detection, Code, Chat, Agent Evals, AI Guard (Jun 2026)",url:"https://www.globenewswire.com/news-release/2026/06/09/3309012/"},
+  {text:"DASH 2026: 100+ launches; Bits AI goes fully autonomous: Detection, Code, Chat, Agent Evals, AI Guard (Jun 2026)",url:"https://www.globenewswire.com/news-release/2026/06/09/3309012/"},
   {text:"Bits Agent Builder: customers build custom AI agents from natural-language goals (Jun 2026)",url:"https://www.datadoghq.com/blog/bits-agent-builder/"},
   {text:"Bits AI SRE gen-2: MCP-powered agent harness, ~2x faster autonomous incident investigations (Mar 2026)",url:"https://www.datadoghq.com/blog/bits-ai-sre-deeper-reasoning/"}],
  committee:[{name:"Olivier Pomel",title:"CEO & Co-founder"},{name:"Alexis Lê-Quôc",title:"CTO & Co-founder"},{name:"Ameet Talwalkar",title:"Chief Scientist, AI Research Lab"}],
- dq:"When Bits Investigation hits a root cause that's external — a cloud provider incident or a fresh CVE — how does the agent get that context today?"},
+ dq:"When Bits Investigation hits a root cause that's external (a cloud provider incident or a fresh CVE), how does the agent get that context today?"},
 
 {name:"HubSpot",segment:"Tech & SaaS",hq:"Cambridge, MA",tier:1,
  snapshot:"~8K employees · customer platform · 280K+ customers",
- why:"Prospecting and Data Agents live or die on fresh external account intelligence — Exa Search grounds Breeze agents in the live web, and Websets powers structured company/people enrichment at CRM scale.",
+ why:"Prospecting and Data Agents live or die on fresh external account intelligence. Exa Search grounds Breeze agents in the live web, and Websets powers structured company/people enrichment at CRM scale.",
  signals:[
   {text:"INBOUND 2025: 200+ product updates; 20+ Breeze Agents, Breeze Studio and Marketplace (Sep 2025)",url:"https://www.businesswire.com/news/home/20250903907062/en/"},
   {text:"Prospecting Agent: a 24/7 BDR that researches accounts and monitors buying signals (Oct 2025)",url:"https://www.hubspot.com/company-news/fall-2025-spotlight"},
   {text:"Agent Hub + Agent Builder: natural-language custom agents on unified CRM context (Jul 2026)",url:"https://www.hubspot.com/company-news/meet-agent-hub-and-agent-builder"}],
  committee:[{name:"Dharmesh Shah",title:"Co-founder & CTO"},{name:"Nicholas Holland",title:"SVP, Head of AI (Breeze)"},{name:"Duncan Lennox",title:"Chief Product & Technology Officer"}],
- dq:"The Prospecting Agent researches target accounts 24/7 — what's the web retrieval layer behind that, and how do you score its freshness and coverage?"},
+ dq:"The Prospecting Agent researches target accounts 24/7. What's the web retrieval layer behind that, and how do you score its freshness and coverage?"},
 
 {name:"Ramp",segment:"Tech & SaaS",hq:"New York, NY",tier:2,
  snapshot:"~1K+ employees · spend-management fintech · $44B valuation",
- why:"Procurement and AP agents need live external data — vendor discovery, pricing benchmarks, entity verification for fraud checks. Exa Search grounds those agents; Websets builds structured vendor datasets on demand.",
+ why:"Procurement and AP agents need live external data: vendor discovery, pricing benchmarks, entity verification for fraud checks. Exa Search grounds those agents; Websets builds structured vendor datasets on demand.",
  signals:[
   {text:"Agents for AP: autonomous invoice coding, fraud checks, approvals, payments (Oct 2025)",url:"https://ramp.com/blog/ramp-ap-agents-announcement"},
   {text:"Agents for Procurement: sourcing, RFx generation, vendor scoring, negotiation prep (Apr 2026)",url:"https://ramp.com/blog/procurement-ai-agents"},
   {text:"Leadership reorg around the AI exponential: Head of Applied AI Rahul Sengottuvelu named CTO (Jun 2026)",url:"https://ramp.com/blog/welcoming-my-co-founder-karim-as-co-ceo-of-ramp"}],
  committee:[{name:"Eric Glyman",title:"Co-founder & Co-CEO"},{name:"Karim Atiyeh",title:"Co-founder & Co-CEO"},{name:"Rahul Sengottuvelu",title:"CTO"},{name:"Geoff Charles",title:"Chief Product Officer"}],
- dq:"When your procurement agent runs a sourcing event or scores vendors, where does the external vendor intelligence come from — and is that pipeline agent-ready?"},
+ dq:"When your procurement agent runs a sourcing event or scores vendors, where does the external vendor intelligence come from, and is that pipeline agent-ready?"},
 
 {name:"Booz Allen Hamilton",segment:"Consulting",hq:"McLean, VA",tier:2,
  snapshot:"~34K employees · largest AI services provider to the US federal government",
- why:"Booz Allen builds agentic systems for government clients that need OSINT-grade, auditable web retrieval — Exa grounds those agents, and Websets accelerates tech-scouting and Ventures deal-sourcing.",
+ why:"Booz Allen builds agentic systems for government clients that need OSINT-grade, auditable web retrieval. Exa grounds those agents, and Websets accelerates tech-scouting and Ventures deal-sourcing.",
  signals:[
   {text:"a16z partnership: first Technology Acceleration Partner for Governments (Jan 2026)",url:"https://www.businesswire.com/news/home/20260112806622/en/"},
   {text:"CTO Bill Vass on agentic architectures and agent swarming for government ISR/ERP systems (Aug 2025)",url:"https://www.boozallen.com/insights/ai-research/bill-vass-bringing-real-innovation-to-federal-tech.html"},
@@ -419,54 +419,54 @@ const ACCOUNTS = [
 
 {name:"UiPath",segment:"Tech & SaaS",hq:"New York, NY",tier:1,
  snapshot:"~3–4K employees · public (PATH) leader in agentic automation",
- why:"UiPath agents act inside enterprise systems but are blind to the live web — Exa Search + Websets gives every Agent Builder workflow (KYC, vendor checks, research steps) grounded real-time retrieval via MCP, which UiPath already supports natively.",
+ why:"UiPath agents act inside enterprise systems but are blind to the live web. Exa Search + Websets gives every Agent Builder workflow (KYC, vendor checks, research steps) grounded real-time retrieval via MCP, which UiPath already supports natively.",
  signals:[
-  {text:"FUSION launch: expanded agentic platform — Agent Builder, conversational agents in Teams/Slack/Copilot, MCP support (Sep 2025)",url:"https://www.uipath.com/newsroom/uipath-accelerates-ai-transformation-with-agentic-automation-and-orchestration"},
+  {text:"FUSION launch: expanded agentic platform with Agent Builder, conversational agents in Teams/Slack/Copilot, MCP support (Sep 2025)",url:"https://www.uipath.com/newsroom/uipath-accelerates-ai-transformation-with-agentic-automation-and-orchestration"},
   {text:"UiPath for Coding Agents: enterprise deployment of Claude Code and Codex-built automations (May 2026)",url:"https://www.uipath.com/newsroom/uipath-for-coding-agents-launch"},
   {text:"Maestro Case: AI-native agentic case management (Jun 2026)",url:"https://www.uipath.com/newsroom/uipath-introduces-maestro-case-for-dynamic-business-processes"}],
  committee:[{name:"Daniel Dines",title:"Founder, CEO & Executive Chairman"},{name:"Raghu Malpani",title:"Chief Product & Technology Officer"},{name:"Mircea Neagovici-Negoescu",title:"VP, AI and Research"},{name:"Tomasz Religa",title:"Director, Applied Science (agentic automation)"}],
- dq:"When your customers' agents in Maestro need external context — a vendor's status, a regulation, a counterparty — what's the retrieval layer today, and how often does it break a long-running workflow?"},
+ dq:"When your customers' agents in Maestro need external context (a vendor's status, a regulation, a counterparty), what's the retrieval layer today, and how often does it break a long-running workflow?"},
 
 {name:"Hebbia",segment:"Tech & SaaS",hq:"New York, NY",tier:1,
  snapshot:"~100–150 employees · $161M raised · Matrix AI platform used by 40%+ of the largest asset managers",
- why:"Matrix and Max excel over internal documents and licensed data — but diligence, origination, and screening demand live public-web coverage. Exa is the API-native, citation-friendly web layer Hebbia can embed instead of build; Websets maps directly to origination/screening.",
+ why:"Matrix and Max excel over internal documents and licensed data, but diligence, origination, and screening demand live public-web coverage. Exa is the API-native, citation-friendly web layer Hebbia can embed instead of build; Websets maps directly to origination/screening.",
  signals:[
   {text:"Aabhas Sharma hired as CTO; SF + London offices opened (Oct 2025)",url:"https://www.businesswire.com/news/home/20251021126864/en/"},
   {text:"Partnership with Fitch Solutions for credit-market intelligence (Feb 2026)",url:"https://www.businesswire.com/news/home/20260224187299/en/"},
   {text:"373% YoY EMEA revenue growth; Seyfarth Shaw deploys Matrix across transactional practices (Mar 2026)",url:"https://www.businesswire.com/news/home/20260312308364/en/"},
-  {text:"Launched Max, an AI teammate for firms — early access (Jul 2026)",url:"https://www.linkedin.com/posts/hebbia_introducing-max-the-first-ai-teammate-that-activity-7488640958922899457-8rYH"}],
+  {text:"Launched Max, an AI teammate for firms, early access (Jul 2026)",url:"https://www.linkedin.com/posts/hebbia_introducing-max-the-first-ai-teammate-that-activity-7488640958922899457-8rYH"}],
  committee:[{name:"George Sivulka",title:"Founder & CEO"},{name:"Aabhas Sharma",title:"President & CTO"},{name:"Barry Duong",title:"Head of AI Strategy"}],
- dq:"When Matrix runs origination or diligence and the answer isn't in the deal room or a licensed feed, how do you source the public-web signal today — and who maintains that pipeline?"},
+ dq:"When Matrix runs origination or diligence and the answer isn't in the deal room or a licensed feed, how do you source the public-web signal today, and who maintains that pipeline?"},
 
 {name:"Recorded Future",segment:"Tech & SaaS",hq:"Boston, MA",tier:1,
  snapshot:"~1K employees · Mastercard-owned threat-intelligence leader (Intelligence Graph)",
- why:"Autonomous threat hunts and the new agent/MCP product line need high-recall open-web collection — attacker infrastructure, leak sites, researcher chatter — at API scale. Exa is purpose-built web search for exactly those agents. Live buying signal: they're hiring an AI Agents & MCP Tools PM right now.",
+ why:"Autonomous threat hunts and the new agent/MCP product line need high-recall open-web collection (attacker infrastructure, leak sites, researcher chatter) at API scale. Exa is purpose-built web search for exactly those agents. Live buying signal: they're hiring an AI Agents & MCP Tools PM right now.",
  signals:[
   {text:"Autonomous Threat Operations launched at Predict 2025: AI-powered 24/7 autonomous threat hunting (Oct 2025)",url:"https://www.prnewswire.com/news-releases/recorded-future-launches-autonomous-threat-operations-enabling-ai-powered-continuous-defense-302578032.html"},
   {text:"ATO general availability with rapid-adoption claims (Mar 2026)",url:"https://www.prnewswire.com/news-releases/threat-hunting-revolution-accelerates-with-rapid-adoption-of-recorded-futures-autonomous-threat-operations-ato-302723475.html"},
-  {text:"Hiring: Product Manager, AI Agents & MCP Tools — agents that orchestrate LLMs over threat intel (Aug 2026)",url:"https://venturefizz.com/job/recorded-future-product-manager-ai-agents-mcp-tools/"}],
+  {text:"Hiring: Product Manager, AI Agents & MCP Tools, agents that orchestrate LLMs over threat intel (Aug 2026)",url:"https://venturefizz.com/job/recorded-future-product-manager-ai-agents-mcp-tools/"}],
  committee:[{name:"Colin Mahony",title:"CEO"},{name:"Staffan Truvé",title:"Co-founder & CTO"},{name:"Jamie Zajac",title:"Chief Product Officer"},{name:"Daniel Gillblad",title:"Chief of AI"}],
- dq:"Your new AI-agents PM role says the agents orchestrate LLMs over threat intel — when a hunt needs open-web context outside the Intelligence Graph, what search tool do those agents call?"},
+ dq:"Your new AI-agents PM role says the agents orchestrate LLMs over threat intel. When a hunt needs open-web context outside the Intelligence Graph, what search tool do those agents call?"},
 
 {name:"Klaviyo",segment:"Tech & SaaS",hq:"Boston, MA",tier:2,
  snapshot:"~2–3K employees · public (KVYO), ~$1B+ revenue · B2C CRM",
- why:"Composer builds campaigns from first-party data but knows nothing about a brand's live web presence, competitors, or trends — Exa gives Klaviyo's agents real-time web context (brand voice from URLs, competitor research, enrichment) as a single API.",
+ why:"Composer builds campaigns from first-party data but knows nothing about a brand's live web presence, competitors, or trends. Exa gives Klaviyo's agents real-time web context (brand voice from URLs, competitor research, enrichment) as a single API.",
  signals:[
   {text:"Marketing Agent + Customer Agent launched at K:BOS (Sep 2025)",url:"https://www.businesswire.com/news/home/20250925521199/en/"},
-  {text:"Composer public beta; Customer Agent becomes a buildable platform — Conversational Agent Builder, 100+ languages (Jun 2026)",url:"https://www.businesswire.com/news/home/20260630493754/en/"},
+  {text:"Composer public beta; Customer Agent becomes a buildable platform: Conversational Agent Builder, 100+ languages (Jun 2026)",url:"https://www.businesswire.com/news/home/20260630493754/en/"},
   {text:"Acquired Agency (AI); its CEO Elias Torres to become CPO leading the agent product line (Aug 2026)",url:"https://www.stocktitan.net/news/KVYO/klaviyo-strengthens-ai-capabilities-with-strategic-acquisition-of-o03u28v038ov.html"}],
  committee:[{name:"Andrew Bialecki",title:"Co-founder & CEO"},{name:"Surabhi Gupta",title:"CTO"},{name:"Adil Wali",title:"Chief Product Officer"},{name:"Liang Zhang",title:"VP Engineering, Head of AI & Data Science"}],
- dq:"Composer learns a brand from a pasted URL today — what powers that crawl and the competitive context behind campaign recommendations, and does it scale to every SKU your customers sell?"},
+ dq:"Composer learns a brand from a pasted URL today. What powers that crawl and the competitive context behind campaign recommendations, and does it scale to every SKU your customers sell?"},
 
 {name:"Salesloft",segment:"Tech & SaaS",hq:"Atlanta, GA",tier:2,
  snapshot:"Merged with Clari (2025–26) · Revenue Orchestration Platform · 21+ AI agents · Google, IBM, 3M",
- why:"Account Research and Person Research Agents are only as good as their web retrieval — Exa Search + Websets can power fresher, higher-precision company/person research than generic search APIs, at agent-request volume. Personal angle: my company Noteninja was acquired by Salesloft; I built their Conversation Intelligence product.",
+ why:"Account Research and Person Research Agents are only as good as their web retrieval. Exa Search + Websets can power fresher, higher-precision company/person research than generic search APIs, at agent-request volume. Personal angle: my company Noteninja was acquired by Salesloft; I built their Conversation Intelligence product.",
  signals:[
-  {text:"Five new AI capabilities — Ask Salesloft, Person Research Agent, AI Knowledge Library; platform hits 21 agents (Aug 2025)",url:"https://www.salesloft.com/company/newsroom/ai-capabilities-improve-pipeline-quality"},
+  {text:"Five new AI capabilities: Ask Salesloft, Person Research Agent, AI Knowledge Library; platform hits 21 agents (Aug 2025)",url:"https://www.salesloft.com/company/newsroom/ai-capabilities-improve-pipeline-quality"},
   {text:"Closing Power suite at Saleslove London: Sales Strategist Agent, Influence Graph (Nov 2025)",url:"https://www.prnewswire.com/news-releases/salesloft-unveils-ai-closing-power-suite-at-saleslove-on-tour-london-event-302613318.html"},
   {text:"Clari + Salesloft appoints CTO and CRO to scale the merged AI platform (May 2026)",url:"https://www.businesswire.com/news/home/20260513426805/en/"}],
  committee:[{name:"Steve Cox",title:"CEO, Clari + Salesloft"},{name:"Rajesh Krishnaswami",title:"CTO"},{name:"Kylie Fuentes",title:"Chief Product Officer"},{name:"Brian Benfer",title:"Chief Revenue Officer"}],
- dq:"Your Account and Person Research Agents promise up-to-date buyer insight — what web-search backend feeds them today, and how do you handle freshness when 21 agents fan out per account?"}
+ dq:"Your Account and Person Research Agents promise up-to-date buyer insight. What web-search backend feeds them today, and how do you handle freshness when 21 agents fan out per account?"}
 ];
 
 const STATS = [
@@ -510,7 +510,7 @@ function renderGrid(seg) {
         <h4>AI signals (via Exa)</h4>
         <ul>${a.signals.map(s => `<li>${s.text}${s.url ? ` <a href="${s.url}" target="_blank" rel="noopener">source ↗</a>` : ''}</li>`).join('')}</ul>
         <h4>Buying committee</h4>
-        <ul class="committee">${a.committee.map(p => `<li><b>${p.name}</b> — ${p.title}</li>`).join('')}</ul>
+        <ul class="committee">${a.committee.map(p => `<li><b>${p.name}</b>, ${p.title}</li>`).join('')}</ul>
         <h4>Discovery opener</h4>
         <p class="dq">“${a.dq}”</p>
       </details>
